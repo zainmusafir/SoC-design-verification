@@ -1,0 +1,1255 @@
+------- comp_all.tcl -------
+Reading toolsetupfile file: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/toolsetup.tcl.
+Library psif_lib already exists
+Library mla_lib already exists
+Library tb_mla_lib already exists
+
+------- comp_wizgen_if.tcl -------
+# Note: Running Register Assistant UVM
+# Note: Running CsvImporter on '[top_psif_regs.csv, top_psif_blocks.csv, top_psif_maps.csv, top_psif_mems.csv]'
+# Note: Running CsvImporter on 'top_psif_regs.csv'
+# Note: Running CsvImporter on 'top_psif_mems.csv'
+# Note: Running CsvImporter on 'top_psif_blocks.csv'
+# Note: Running CsvImporter on 'top_psif_maps.csv'
+# Note: Checking that object names are valid ...
+# Note: Checking important attributes...
+# Note: Checking for duplicate names ...
+# Note: Checking numerical values ...
+# Note: Checking that Field Value widths are consistent with Field widths ...
+# Note: Checking Address overlap...
+# Note: Checking reset values ...
+# Note: Running 1 UVM generator specific checks.
+# Note:   Checking register fields backdoor path...
+# Note: UVM Generator running on project 'csvFiles'
+# Note: No output directory specified, using default directory '/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles' instead.
+# Note: Creating file '/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles/top_psif_vreguvm_pkg_uvm.sv'
+# Note: Running Register Assistant UVM
+# Note: Running CsvImporter on '[top_psif_regs_rw.csv, top_psif_blocks_rw.csv, top_psif_maps_rw.csv, top_psif_mems_rw.csv]'
+# Note: Running CsvImporter on 'top_psif_regs_rw.csv'
+# Note: Running CsvImporter on 'top_psif_mems_rw.csv'
+# Note: Running CsvImporter on 'top_psif_blocks_rw.csv'
+# Note: Running CsvImporter on 'top_psif_maps_rw.csv'
+# Note: Checking that object names are valid ...
+# Note: Checking important attributes...
+# Note: Checking for duplicate names ...
+# Note: Checking numerical values ...
+# Note: Checking that Field Value widths are consistent with Field widths ...
+# Note: Checking Address overlap...
+# Note: Checking reset values ...
+# Note: Running 1 UVM generator specific checks.
+# Note:   Checking register fields backdoor path...
+# Note: UVM Generator running on project 'csvFiles'
+# Note: No output directory specified, using default directory '/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles' instead.
+# Note: Creating file '/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles/top_psif_vreguvm_pkg_uvm_rw.sv'
+
+------- comp_pck.tcl -------
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/packages/zedboard_target_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package target_pck
+End time: 12:30:12 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/psif_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/packages/psif_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package psif_pck
+End time: 12:30:12 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/psif_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/packages/psif_odi_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package odi_pck
+End time: 12:30:12 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/psif_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/packages/psif_dti_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package dti_pck
+End time: 12:30:12 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/psif_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/packages/psif_zu_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package zu_pck
+End time: 12:30:12 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/psif_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/packages/psif_scu_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package scu_pck
+End time: 12:30:12 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:12 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/psif_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/packages/psif_aui_pck.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package aui_pck
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+------- comp_ip.tcl -------
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/axi4pifb/psif_axi4pifb_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling entity psif_axi4pifb
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/axi4pifb/psif_axi4pifb_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling architecture rtl of psif_axi4pifb
+-- Loading entity psif_axi4pifb
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/odi/psif_odi_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package odi_pck
+-- Loading package psif_pck
+-- Compiling entity odi_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/odi/psif_odi_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package odi_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of odi_reg
+-- Loading entity odi_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/dti/psif_dti_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dti_pck
+-- Loading package psif_pck
+-- Compiling entity dti_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/dti/psif_dti_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dti_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of dti_reg
+-- Loading entity dti_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/zu/psif_zu_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Loading package psif_pck
+-- Compiling entity zu_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/zu/psif_zu_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of zu_reg
+-- Loading entity zu_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/scu/psif_scu_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package scu_pck
+-- Loading package psif_pck
+-- Compiling entity scu_reg
+End time: 12:30:13 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:13 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/scu/psif_scu_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package scu_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of scu_reg
+-- Loading entity scu_reg
+End time: 12:30:14 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:14 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/aui/psif_aui_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package aui_pck
+-- Loading package psif_pck
+-- Compiling entity aui_reg
+End time: 12:30:14 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:14 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/hdl/pif/aui/psif_aui_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package aui_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of aui_reg
+-- Loading entity aui_reg
+End time: 12:30:14 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:14 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher
+-- Compiling architecture behav of aes_inv_cipher
+End time: 12:30:14 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:14 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zedboard_xc7z020/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clk_wiz_0_clk_wiz_0_clk_wiz
+-- Compiling architecture STRUCTURE of clk_wiz_0_clk_wiz_0_clk_wiz
+-- Compiling entity clk_wiz_0
+-- Compiling architecture STRUCTURE of clk_wiz_0
+-- Loading entity clk_wiz_0_clk_wiz_0_clk_wiz
+End time: 12:30:14 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:14 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zedboard_xc7z020/fifo_512x32bit/fifo_512x32bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo_512x32bit_xpm_cdc_gray
+-- Compiling architecture STRUCTURE of fifo_512x32bit_xpm_cdc_gray
+-- Compiling entity \fifo_512x32bit_xpm_cdc_gray__2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_gray__2\
+-- Compiling entity fifo_512x32bit_xpm_cdc_single
+-- Compiling architecture STRUCTURE of fifo_512x32bit_xpm_cdc_single
+-- Compiling entity \fifo_512x32bit_xpm_cdc_single__2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_single__2\
+-- Compiling entity fifo_512x32bit_xpm_cdc_sync_rst
+-- Compiling architecture STRUCTURE of fifo_512x32bit_xpm_cdc_sync_rst
+-- Compiling entity \fifo_512x32bit_xpm_cdc_sync_rst__2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_sync_rst__2\
+-- Compiling entity \fifo_512x32bit_xpm_cdc_sync_rst__parameterized2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_sync_rst__parameterized2\
+-- Compiling entity fifo_512x32bit
+-- Compiling architecture STRUCTURE of fifo_512x32bit
+End time: 12:30:15 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:15 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zedboard_xc7z020/fifo_512x16bit/fifo_512x16bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo_512x16bit_xpm_cdc_async_rst
+-- Compiling architecture STRUCTURE of fifo_512x16bit_xpm_cdc_async_rst
+-- Compiling entity \fifo_512x16bit_xpm_cdc_async_rst__1\
+-- Compiling architecture STRUCTURE of \fifo_512x16bit_xpm_cdc_async_rst__1\
+-- Compiling entity fifo_512x16bit_xpm_cdc_gray
+-- Compiling architecture STRUCTURE of fifo_512x16bit_xpm_cdc_gray
+-- Compiling entity \fifo_512x16bit_xpm_cdc_gray__2\
+-- Compiling architecture STRUCTURE of \fifo_512x16bit_xpm_cdc_gray__2\
+-- Compiling entity fifo_512x16bit_xpm_cdc_single
+-- Compiling architecture STRUCTURE of fifo_512x16bit_xpm_cdc_single
+-- Compiling entity \fifo_512x16bit_xpm_cdc_single__2\
+-- Compiling architecture STRUCTURE of \fifo_512x16bit_xpm_cdc_single__2\
+-- Compiling entity fifo_512x16bit
+-- Compiling architecture STRUCTURE of fifo_512x16bit
+End time: 12:30:16 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:16 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zedboard_xc7z020/fifo_512x8bit/fifo_512x8bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo_512x8bit_xpm_cdc_async_rst
+-- Compiling architecture STRUCTURE of fifo_512x8bit_xpm_cdc_async_rst
+-- Compiling entity \fifo_512x8bit_xpm_cdc_async_rst__1\
+-- Compiling architecture STRUCTURE of \fifo_512x8bit_xpm_cdc_async_rst__1\
+-- Compiling entity fifo_512x8bit_xpm_cdc_gray
+-- Compiling architecture STRUCTURE of fifo_512x8bit_xpm_cdc_gray
+-- Compiling entity \fifo_512x8bit_xpm_cdc_gray__2\
+-- Compiling architecture STRUCTURE of \fifo_512x8bit_xpm_cdc_gray__2\
+-- Compiling entity fifo_512x8bit_xpm_cdc_single
+-- Compiling architecture STRUCTURE of fifo_512x8bit_xpm_cdc_single
+-- Compiling entity \fifo_512x8bit_xpm_cdc_single__2\
+-- Compiling architecture STRUCTURE of \fifo_512x8bit_xpm_cdc_single__2\
+-- Compiling entity fifo_512x8bit
+-- Compiling architecture STRUCTURE of fifo_512x8bit
+End time: 12:30:17 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:17 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zedboard_xc7z020/bram_truedualport_512x32bit/bram_truedualport_512x32bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Compiling entity bram_truedualport_512x32bit
+-- Compiling architecture STRUCTURE of bram_truedualport_512x32bit
+End time: 12:30:17 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+
+------- comp_core.tcl -------
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:17 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/cru/hdl/cru_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity cru
+End time: 12:30:18 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:18 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/cru/hdl/cru_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture rtl of cru
+-- Loading entity cru
+End time: 12:30:18 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:18 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/ascii_rom.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ascii_rom
+-- Compiling architecture behavioral of ascii_rom
+End time: 12:30:18 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:18 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/delay.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity delay
+-- Compiling architecture behavioral of delay
+End time: 12:30:18 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:18 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/oled_ctrl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity oled_ctrl
+-- Compiling architecture behavioral of oled_ctrl
+End time: 12:30:18 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:18 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/oled_ex.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity oled_ex
+-- Compiling architecture behavioral of oled_ex
+** Warning: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/oled_ex.vhd(145): (vcom-1013) Initial value of "all_screen_lines" depends on value of signal "screen_slv".
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 2
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/oled_init.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity oled_init
+-- Compiling architecture behavioral of oled_init
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/spi_ctrl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity spi_ctrl
+-- Compiling architecture behavioral of spi_ctrl
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/odi_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package psif_pck
+-- Loading package odi_pck
+-- Compiling entity odi
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/odi/hdl/odi_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture str of odi
+-- Loading package psif_pck
+-- Loading package odi_pck
+-- Loading entity odi
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/dti/hdl/dti_spi_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dti_spi
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/dti/hdl/dti_spi_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling architecture dmy of dti_spi
+-- Loading entity dti_spi
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/dti/hdl/dti_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package psif_pck
+-- Loading package dti_pck
+-- Compiling entity dti
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/dti/hdl/dti_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture str of dti
+-- Loading package psif_pck
+-- Loading package dti_pck
+-- Loading entity dti
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/dti/hdl/spictrl_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity spictrl
+End time: 12:30:19 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:19 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/dti/hdl/spictrl_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling architecture rtl of spictrl
+-- Loading entity spictrl
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/zu_fsm_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Compiling entity zu_fsm
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/zu_fsm_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Compiling architecture rtl of zu_fsm
+-- Loading entity zu_fsm
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/zu_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package psif_pck
+-- Loading package zu_pck
+-- Compiling entity zu
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/zu_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture str of zu
+-- Loading package psif_pck
+-- Loading package zu_pck
+-- Loading entity zu
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/scu/hdl/scu_fsm_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Compiling entity scu_fsm
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/scu/hdl/scu_fsm_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package scu_pck
+-- Compiling architecture rtl of scu_fsm
+-- Loading package zu_pck
+-- Loading entity scu_fsm
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/scu/hdl/scu_edge_regenerator_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity scu_edge_regenerator
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/scu/hdl/scu_edge_regenerator_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture rtl of scu_edge_regenerator
+-- Loading entity scu_edge_regenerator
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/scu/hdl/scu_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package psif_pck
+-- Loading package scu_pck
+-- Compiling entity scu
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/scu/hdl/scu_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture str of scu
+-- Loading package psif_pck
+-- Loading package scu_pck
+-- Loading entity scu
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/aui/hdl/aui_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package psif_pck
+-- Compiling entity aui
+End time: 12:30:20 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:20 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/aui/hdl/aui_aurorarxctrl_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aui_aurorarxctrl
+End time: 12:30:21 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:21 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/aui/hdl/aui_aurorarxctrl_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling architecture rtl of aui_aurorarxctrl
+-- Loading entity aui_aurorarxctrl
+End time: 12:30:21 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:21 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/aui/hdl/aui_auroratxctrl_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aui_auroratxctrl
+End time: 12:30:21 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:21 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/aui/hdl/aui_auroratxctrl_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling architecture rtl of aui_auroratxctrl
+-- Loading entity aui_auroratxctrl
+End time: 12:30:21 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:21 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/aui/hdl/aui_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Loading package aui_pck
+-- Compiling architecture str of aui
+-- Loading entity aui
+End time: 12:30:21 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:21 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/synchronizer.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity synchronizer
+-- Compiling architecture rtl of synchronizer
+End time: 12:30:21 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:21 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/processor_system/zedboard/processor_system_dummy/processor_system_dmy.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity processor_system
+-- Compiling architecture STRUCTURE of processor_system
+End time: 12:30:22 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:22 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/hdl/core_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling entity core
+End time: 12:30:22 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:22 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/hdl/core_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Loading package odi_pck
+-- Loading package dti_pck
+-- Compiling architecture str of core
+-- Loading entity core
+End time: 12:30:22 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:22 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/hdl/top_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package target_pck
+-- Compiling entity top
+End time: 12:30:22 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:22 on Nov 14,2023
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/hdl/top_str.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Loading package target_pck
+-- Compiling architecture str of top
+-- Loading entity top
+End time: 12:30:23 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+------- aurora_compile.tcl -------
+** Warning: (vlib-34) Library already exists at "/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/work".
+Errors: 0, Warnings: 1
+** Warning: (vlib-34) Library already exists at "/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim".
+Errors: 0, Warnings: 1
+** Warning: (vlib-34) Library already exists at "/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xpm".
+Errors: 0, Warnings: 1
+** Warning: (vlib-34) Library already exists at "/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/gtwizard_ultrascale_v1_7_9".
+Errors: 0, Warnings: 1
+** Warning: (vlib-34) Library already exists at "/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib".
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:23 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xpm -64 -sv /projects/robin/programs/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv /projects/robin/programs/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv 
+-- Compiling module xpm_cdc_single
+-- Compiling module xpm_cdc_gray
+-- Compiling module xpm_cdc_handshake
+-- Compiling module xpm_cdc_pulse
+-- Compiling module xpm_cdc_array_single
+-- Compiling module xpm_cdc_sync_rst
+-- Compiling module xpm_cdc_async_rst
+-- Compiling module xpm_cdc_low_latency_handshake
+-- Compiling module xpm_memory_base
+-- Compiling module asym_bwe_bb
+-- Compiling module xpm_memory_dpdistram
+-- Compiling module xpm_memory_dprom
+-- Compiling module xpm_memory_sdpram
+-- Compiling module xpm_memory_spram
+-- Compiling module xpm_memory_sprom
+-- Compiling module xpm_memory_tdpram
+
+Top level modules:
+	xpm_cdc_gray
+	xpm_cdc_handshake
+	xpm_cdc_pulse
+	xpm_cdc_array_single
+	xpm_cdc_sync_rst
+	xpm_cdc_async_rst
+	xpm_cdc_low_latency_handshake
+	xpm_memory_dpdistram
+	xpm_memory_dprom
+	xpm_memory_sdpram
+	xpm_memory_spram
+	xpm_memory_sprom
+	xpm_memory_tdpram
+End time: 12:30:23 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:23 on Nov 14,2023
+vcom -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xpm -64 -93 /projects/robin/programs/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package VCOMPONENTS
+End time: 12:30:23 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:23 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/gtwizard_ultrascale_v1_7_9 -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_bit_sync.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gte4_drp_arb.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe4_delay_powergood.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe3_cpll_cal.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe3_cal_freqcnt.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe4_cpll_cal.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe4_cpll_cal_rx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe4_cpll_cal_tx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gthe4_cal_freqcnt.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_rx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_tx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtye4_cal_freqcnt.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_buffbypass_rx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_buffbypass_tx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_userclk_rx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_userclk_tx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_reset_sync.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/ipstatic/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v 
+-- Compiling module gtwizard_ultrascale_v1_7_9_bit_synchronizer
+-- Compiling module gtwizard_ultrascale_v1_7_9_gte4_drp_arb
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe4_delay_powergood
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtye4_delay_powergood
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe3_cpll_cal
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe3_cpll_cal_freq_counter
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal_rx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal_tx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal_freq_counter
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_rx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_tx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_freq_counter
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_rx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_tx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_reset
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_userclk_rx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_userclk_tx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_userdata_rx
+-- Compiling module gtwizard_ultrascale_v1_7_9_gtwiz_userdata_tx
+-- Compiling module gtwizard_ultrascale_v1_7_9_reset_synchronizer
+-- Compiling module gtwizard_ultrascale_v1_7_9_reset_inv_synchronizer
+
+Top level modules:
+	gtwizard_ultrascale_v1_7_9_gthe4_delay_powergood
+	gtwizard_ultrascale_v1_7_9_gtye4_delay_powergood
+	gtwizard_ultrascale_v1_7_9_gthe3_cpll_cal
+	gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal
+	gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal
+	gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_rx
+	gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_tx
+	gtwizard_ultrascale_v1_7_9_gtwiz_reset
+	gtwizard_ultrascale_v1_7_9_gtwiz_userclk_rx
+	gtwizard_ultrascale_v1_7_9_gtwiz_userclk_tx
+	gtwizard_ultrascale_v1_7_9_gtwiz_userdata_rx
+	gtwizard_ultrascale_v1_7_9_gtwiz_userdata_tx
+End time: 12:30:23 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:23 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe4_channel.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/ip_0/sim/aurora_8b10b_0_gt_gthe4_channel_wrapper.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/ip_0/sim/aurora_8b10b_0_gt_gtwizard_gthe4.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/ip_0/sim/aurora_8b10b_0_gt_gtwizard_top.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/ip_0/sim/aurora_8b10b_0_gt.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_reset_logic.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0_core.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_support.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_support_reset_logic.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_clock_module.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_aurora_lane_4byte.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_axi_to_ll.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_channel_err_detect.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_channel_init_sm.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_chbond_count_dec_4byte.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_crc_top.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_err_detect_4byte.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_global_logic.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_hotplug.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_idle_and_ver_gen.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_lane_init_sm_4byte.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_left_align_control.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_left_align_mux.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_ll_to_axi.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_output_mux.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_output_switch_control.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_rx_ll.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_rx_ll_deframer.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_rx_ll_pdu_datapath.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_rxcrc.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_sideband_output.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_standard_cc_module.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_storage_ce_control.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_storage_count_control.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_storage_mux.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_storage_switch_control.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_sym_dec_4byte.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_sym_gen_4byte.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_cdc_sync.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/gt/aurora_8b10b_0_transceiver_wrapper.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_tx_ll.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_tx_ll_control.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_tx_ll_datapath.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_txcrc.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0/src/aurora_8b10b_0_valid_data_counter.v /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.gen/sources_1/ip/aurora_8b10b_0/aurora_8b10b_0.v 
+-- Compiling module gtwizard_ultrascale_v1_7_9_gthe4_channel
+-- Compiling module aurora_8b10b_0_gt_gthe4_channel_wrapper
+-- Compiling module aurora_8b10b_0_gt_gtwizard_gthe4
+-- Compiling module aurora_8b10b_0_gt_gtwizard_top
+-- Compiling module aurora_8b10b_0_gt
+-- Compiling module aurora_8b10b_0_RESET_LOGIC
+-- Compiling module aurora_8b10b_0_core
+-- Compiling module aurora_8b10b_0_support
+-- Compiling module aurora_8b10b_0_SUPPORT_RESET_LOGIC
+-- Compiling module aurora_8b10b_0_CLOCK_MODULE
+-- Compiling module aurora_8b10b_0_AURORA_LANE_4BYTE
+-- Compiling module aurora_8b10b_0_AXI_TO_LL
+-- Compiling module aurora_8b10b_0_CHANNEL_ERR_DETECT
+-- Compiling module aurora_8b10b_0_CHANNEL_INIT_SM
+-- Compiling module aurora_8b10b_0_CHBOND_COUNT_DEC_4BYTE
+-- Compiling module aurora_8b10b_0_CRC_TOP
+-- Compiling module aurora_8b10b_0_ERR_DETECT_4BYTE
+-- Compiling module aurora_8b10b_0_GLOBAL_LOGIC
+-- Compiling module aurora_8b10b_0_hotplug
+-- Compiling module aurora_8b10b_0_IDLE_AND_VER_GEN
+-- Compiling module aurora_8b10b_0_LANE_INIT_SM_4BYTE
+-- Compiling module aurora_8b10b_0_LEFT_ALIGN_CONTROL
+-- Compiling module aurora_8b10b_0_LEFT_ALIGN_MUX
+-- Compiling module aurora_8b10b_0_LL_TO_AXI
+-- Compiling module aurora_8b10b_0_OUTPUT_MUX
+-- Compiling module aurora_8b10b_0_OUTPUT_SWITCH_CONTROL
+-- Compiling module aurora_8b10b_0_RX_LL
+-- Compiling module aurora_8b10b_0_RX_LL_DEFRAMER
+-- Compiling module aurora_8b10b_0_RX_LL_PDU_DATAPATH
+-- Compiling module aurora_8b10b_0_RX_CRC
+-- Compiling module aurora_8b10b_0_SIDEBAND_OUTPUT
+-- Compiling module aurora_8b10b_0_STANDARD_CC_MODULE
+-- Compiling module aurora_8b10b_0_STORAGE_CE_CONTROL
+-- Compiling module aurora_8b10b_0_STORAGE_COUNT_CONTROL
+-- Compiling module aurora_8b10b_0_STORAGE_MUX
+-- Compiling module aurora_8b10b_0_STORAGE_SWITCH_CONTROL
+-- Compiling module aurora_8b10b_0_SYM_DEC_4BYTE
+-- Compiling module aurora_8b10b_0_SYM_GEN_4BYTE
+-- Compiling module aurora_8b10b_0_cdc_sync
+-- Compiling module aurora_8b10b_0_GT_WRAPPER
+-- Compiling module aurora_8b10b_0_TX_LL
+-- Compiling module aurora_8b10b_0_TX_LL_CONTROL
+-- Compiling module aurora_8b10b_0_TX_LL_DATAPATH
+-- Compiling module aurora_8b10b_0_TX_CRC
+-- Compiling module aurora_8b10b_0_VALID_DATA_COUNTER
+-- Compiling module aurora_8b10b_0
+
+Top level modules:
+	aurora_8b10b_0
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/aurora_8b10b_0_ex.ip_user_files/sim_scripts/aurora_8b10b_0/questa/glbl.v 
+-- Compiling module glbl
+
+Top level modules:
+	glbl
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/imports/aurora_8b10b_0_axi_to_ll_exdes.v 
+-- Compiling module aurora_8b10b_0_AXI_TO_LL_EXDES
+
+Top level modules:
+	aurora_8b10b_0_AXI_TO_LL_EXDES
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/imports/aurora_8b10b_0_axi_to_ll_exdes.v 
+-- Compiling module aurora_8b10b_0_AXI_TO_LL_EXDES
+
+Top level modules:
+	aurora_8b10b_0_AXI_TO_LL_EXDES
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/imports/aurora_8b10b_0_ll_to_axi_exdes.v 
+-- Compiling module aurora_8b10b_0_LL_TO_AXI_EXDES
+
+Top level modules:
+	aurora_8b10b_0_LL_TO_AXI_EXDES
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/imports/aurora_8b10b_0_cdc_sync_exdes.v 
+-- Compiling module aurora_8b10b_0_cdc_sync_exdes
+
+Top level modules:
+	aurora_8b10b_0_cdc_sync_exdes
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/imports/aurora_8b10b_0_frame_gen.v 
+-- Compiling module aurora_8b10b_0_FRAME_GEN
+
+Top level modules:
+	aurora_8b10b_0_FRAME_GEN
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/ip/zcu106_xczu7ev/aurora_8b10b_0_ex/imports/aurora_8b10b_0_frame_check.v 
+-- Compiling module aurora_8b10b_0_FRAME_CHECK
+
+Top level modules:
+	aurora_8b10b_0_FRAME_CHECK
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 12:30:24 on Nov 14,2023
+vlog "+acc=npr" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/questa_lib/msim/xil_defaultlib -64 /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/aurora_8b10b_0_exdes_MODIFIED.v 
+-- Compiling module aurora_8b10b_0_exdes
+
+Top level modules:
+	aurora_8b10b_0_exdes
+End time: 12:30:24 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+------- comp_tb.tcl -------
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:24 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles/top_psif_vreguvm_pkg_uvm.sv 
+-- Compiling package top_psif_vreguvm_pkg_uvm
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles/top_psif_vreguvm_pkg_uvm.sv(26): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:25 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:25 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles/top_psif_vreguvm_pkg_uvm_rw.sv 
+-- Compiling package top_psif_vreguvm_pkg_uvm_rw
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/if/psif/tb/csvFiles/top_psif_vreguvm_pkg_uvm_rw.sv(26): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:25 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:25 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/reset_agent/reset_agent_if.sv 
+-- Compiling interface reset_agent_if
+
+Top level modules:
+	--none--
+End time: 12:30:25 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:25 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/reset_agent/reset_agent_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/reset_agent" 
+-- Compiling package reset_agent_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/reset_agent/reset_agent_pkg.sv(7): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+End time: 12:30:26 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+--> Compiling SETUP_KBAXI4LITE  <--
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:26 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/typedef_pkg.sv 
+-- Compiling package typedef_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:26 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:26 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/kb_axi4lite_agent_if.sv 
+-- Compiling package kb_axi4lite_agent_if_sv_unit
+-- Importing package typedef_pkg
+-- Compiling interface kb_axi4lite_agent_if
+
+Top level modules:
+	--none--
+End time: 12:30:26 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:26 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/kb_axi4lite_agent_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent" 
+-- Compiling package kb_axi4lite_agent_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/kb_axi4lite_agent_pkg.sv(7): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package typedef_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:26 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+--> Compiling SETUP_KBAXI4STREAM  <--
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:26 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4stream_agent/kb_axi4stream_typedef_pkg.sv 
+-- Compiling package kb_axi4stream_typedef_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:27 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:27 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4stream_agent/kb_axi4stream_agent_if.sv 
+-- Compiling interface kb_axi4stream_agent_if
+
+Top level modules:
+	--none--
+End time: 12:30:27 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:27 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4stream_agent/kb_axi4stream_agent_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4stream_agent" 
+-- Compiling package kb_axi4stream_agent_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4stream_agent/kb_axi4stream_agent_pkg.sv(4): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package kb_axi4stream_typedef_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:27 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:27 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/oled_spi_agent/oled_spi_agent_if.sv 
+-- Compiling interface oled_spi_agent_if
+
+Top level modules:
+	--none--
+End time: 12:30:27 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:27 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/oled_spi_agent/oled_spi_agent_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/oled_spi_agent" 
+-- Compiling package oled_spi_agent_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/oled_spi_agent/oled_spi_agent_pkg.sv(7): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+End time: 12:30:27 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:27 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent" 
+-- Compiling package spi_wire_agent_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_pkg.sv(6): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+End time: 12:30:28 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+--> Compiling testbench probes  <--
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:28 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/probe_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base" 
+-- Compiling package probe_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling interface probe_itf
+-- Importing package probe_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:28 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+--> Compiling testbench  <--
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:28 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_top_core_odi_oled_ctrl_bind.sv -mfcu -cuname tb_top_core_odi_oled_ctrl_bind 
+-- Compiling package tb_top_core_odi_oled_ctrl_bind
+
+Top level modules:
+	--none--
+End time: 12:30:28 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:28 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_top_core_dti_dti_spi_bind.sv -mfcu -cuname tb_top_core_dti_dti_spi_bind 
+-- Compiling package tb_top_core_dti_dti_spi_bind
+
+Top level modules:
+	--none--
+End time: 12:30:28 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:28 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_top_core_dti_bind.sv -mfcu -cuname tb_top_core_dti_bind 
+-- Compiling package tb_top_core_dti_bind
+
+Top level modules:
+	--none--
+End time: 12:30:29 on Nov 14,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:29 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_top_core_zu_aes128_bind.sv -mfcu -cuname tb_top_core_zu_aes128_bind 
+-- Compiling package tb_top_core_zu_aes128_bind
+
+Top level modules:
+	--none--
+End time: 12:30:29 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:29 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/axi4params_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base" 
+-- Compiling package axi4params_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/axi4params_pkg.sv(3): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: (vlog-2292) An included file is associated with a closed UVM package, but no closed UVM package was imported
+
+Top level modules:
+	--none--
+End time: 12:30:29 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2
+QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: (vlog-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 12:30:29 on Nov 14,2023
+vlog -timescale 1ns/1ps -L unisim -L unimacro -linedebug -assertdebug "+acc=npr" "+cover" -work /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/libs/tb_mla_lib "+define+SETUP_KBAXI4LITE" /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/tb_env_base_pkg.sv "+incdir+/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base" 
+-- Compiling package tb_env_base_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package reset_agent_pkg
+-- Importing package kb_axi4lite_agent_pkg
+-- Importing package typedef_pkg
+** Note: (vlog-2286) /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/tb_env_base_pkg.sv(14): Using implicit +incdir+/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 12:30:29 on Nov 14,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
