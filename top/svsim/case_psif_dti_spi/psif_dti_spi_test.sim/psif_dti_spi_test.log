@@ -1,0 +1,384 @@
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_test.svh(367) @ 0: uvm_test_top [psif_dti_spi_test] Printing the test topology :
+------------------------------------------------------------------------------------------
+Name                              Type                                         Size  Value
+------------------------------------------------------------------------------------------
+uvm_test_top                      psif_dti_spi_test                            -     @499 
+  m_env                           tb_env                                       -     @1012
+    coverage_override_h           coverage_override                            -     @1033
+      recording_detail            integral                                     32    'd1  
+    m_kb_axi4stream_agent         kb_axi4stream_agent                          -     @1061
+      ap                          uvm_analysis_port                            -     @1083
+        recording_detail          integral                                     32    'd1  
+      m_driver                    kb_axi4stream_agent_driver                   -     @1098
+        rsp_port                  uvm_analysis_port                            -     @1113
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1105
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_monitor                   kb_axi4stream_agent_monitor                  -     @1091
+        ap                        uvm_analysis_port                            -     @1231
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1121
+        rsp_export                uvm_analysis_export                          -     @1128
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1222
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_oled_spi_agent              oled_spi_agent                               -     @1047
+      m_monitor                   oled_spi_agent_monitor                       -     @1245
+        ap                        uvm_analysis_port                            -     @1252
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_psif_axi4lite_master_agent  kb_axi4lite_agent                            -     @1019
+      ap                          uvm_analysis_port                            -     @1262
+        recording_detail          integral                                     32    'd1  
+      m_driver                    kb_axi4lite_agent_driver                     -     @1292
+        rsp_port                  uvm_analysis_port                            -     @1307
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1299
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_fcov_monitor              kb_axi4lite_agent_coverage_monitor           -     @1277
+        analysis_imp              uvm_analysis_imp                             -     @1284
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_monitor                   kb_axi4lite_agent_monitor                    -     @1270
+        ap                        uvm_analysis_port                            -     @1425
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1315
+        rsp_export                uvm_analysis_export                          -     @1322
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1416
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_reset_agent                 reset_agent                                  -     @1026
+      m_driver                    reset_agent_driver                           -     @1439
+        rsp_port                  uvm_analysis_port                            -     @1454
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1446
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1462
+        rsp_export                uvm_analysis_export                          -     @1469
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1563
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_scoreboard_oled_spi_base    scoreboard_oled_spi_base                     -     @1068
+      oled_spi_monitor_out        uvm_tlm_analysis_fifo #(T)                   -     @1577
+        analysis_export           uvm_analysis_imp                             -     @1616
+          recording_detail        integral                                     32    'd1  
+        get_ap                    uvm_analysis_port                            -     @1608
+          recording_detail        integral                                     32    'd1  
+        get_peek_export           uvm_get_peek_imp                             -     @1592
+          recording_detail        integral                                     32    'd1  
+        put_ap                    uvm_analysis_port                            -     @1600
+          recording_detail        integral                                     32    'd1  
+        put_export                uvm_put_imp                                  -     @1584
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_scoreboard_zu_base          scoreboard_zu_base                           -     @1075
+      recording_detail            integral                                     32    'd1  
+    m_spi_4wire_agent             spi_4wire_agent                              -     @1054
+      m_driver                    spi_4wire_agent_driver                       -     @1640
+        rsp_port                  uvm_analysis_port                            -     @1655
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1647
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_monitor                   spi_4wire_agent_monitor                      -     @1625
+        ap                        uvm_analysis_port                            -     @1632
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1663
+        rsp_export                uvm_analysis_export                          -     @1670
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1764
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    scoreboard_override_h         scoreboard_override                          -     @1040
+      recording_detail            integral                                     32    'd1  
+    recording_detail              integral                                     32    'd1  
+  m_psif_reg_predictor_all        uvm_reg_predictor #(kb_axi4lite_agent_item)  -     @966 
+    bus_in                        uvm_analysis_imp                             -     @973 
+      recording_detail            integral                                     32    'd1  
+    reg_ap                        uvm_analysis_port                            -     @981 
+      recording_detail            integral                                     32    'd1  
+    recording_detail              integral                                     32    'd1  
+  m_psif_reg_predictor_rw         uvm_reg_predictor #(kb_axi4lite_agent_item)  -     @989 
+    bus_in                        uvm_analysis_imp                             -     @996 
+      recording_detail            integral                                     32    'd1  
+    reg_ap                        uvm_analysis_port                            -     @1004
+      recording_detail            integral                                     32    'd1  
+    recording_detail              integral                                     32    'd1  
+  recording_detail                integral                                     32    'd1  
+------------------------------------------------------------------------------------------
+
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(22) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Module names: AUI
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(22) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Module names: SCU
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(22) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Module names: ZU
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(22) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Module names: DTI
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(22) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Module names: ODI
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_RESET
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_RESET
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_PS_TXFIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_PS_RXFIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_LOOPBACK
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_GT_RESET
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_FIFO_TX_WRITE_ENABLE
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_CORE_STATUS
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: AUI_AURORA_ACCESS_LOOP_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_ZU_TDATA_CNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_ZU_DATA_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_ZU_BYTE_CNT_ERROR
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_TEMPERATURE_TEST_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_TEMPERATURE_TEST_DIGIT1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_TEMPERATURE_TEST_DIGIT0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_OLEDBYTE7_4
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_OLEDBYTE3_0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_OLEDBYTE15_12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_OLEDBYTE11_8
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_FSM_RST
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_DTI_READ_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: SCU_ALARM_ACK_BUTTON
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ZU_START_DECRYPTION
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ZU_FSM_RST
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ZU_DONE_DECRYPTION
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ZU_DECRYPTION_BYPASS
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: DTI_SPI_TX_FIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: DTI_SPI_RX_FIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: DTI_SPI_PS_ACCESS_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: DTI_SPI_LOOP_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: DTI_SPI_FIFO_TX_WRITE_ENABLE
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: DTI_SPI_ACTIVE
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ODI_PS_ACCESS_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ODI_OLEDBYTE7_4
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ODI_OLEDBYTE3_0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ODI_OLEDBYTE15_12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_dti_spi/psif_dti_spi_seq.svh(26) @ 31000000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Register names: ODI_OLEDBYTE11_8
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/spi_4wire_seq.svh(17) @ 31000000: uvm_test_top.m_env.m_spi_4wire_agent.sequencer@@m_spi_4wire_seq [SPI_4WIRE_SEQ] SPI 4WIRE sequence is started
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 31145000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_PS_ACCESS_ENA with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 31145000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_PS_ACCESS_ENA with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 31565000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_PS_ACCESS_ENA with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 31775000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 31775000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 32195000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 32195000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_LOOP_ENA with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 32615000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_LOOP_ENA with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 32825000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 33035000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_TX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33035000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x12345678
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33185000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0xabcdef98
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33275000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x98765432
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 33365000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 33725000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 33935000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x3
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34085000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x5678
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34175000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0xef98
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34265000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x5432
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 34415000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 34625000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_TX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 34625000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_LOOP_ENA with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 34835000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35045000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8012
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35195000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x81ab
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35285000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x82cd
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35375000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8324
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35465000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8436
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35555000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8547
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35645000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8658
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 35885000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 36095000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_TX_FIFO_COUNT with value: 0x7
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 36095000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 36515000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 37665000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 38815000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 39965000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 41115000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 41397500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x80
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 41397500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 41397500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 42265000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 43415000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 44565000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 45715000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 46737500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x81
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 46737500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0xab
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 46737500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 46865000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 48015000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 49165000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 50315000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 51465000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 52077500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x82
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 52077500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0xcd
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 52077500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 52615000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 53765000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 54915000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 56065000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 57215000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 57417500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x83
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 57417500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x24
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 57417500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 58365000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 59515000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 60665000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 61815000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 62757500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x84
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 62757500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x36
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 62757500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 62965000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 64115000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 65265000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 66415000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 67565000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 68097500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x85
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 68097500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x47
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 68097500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 68715000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 69865000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 71015000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 72165000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 73315000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 73437500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x86
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 73437500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x58
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 73437500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xx
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 74465000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Polling register DTI_SPI_ACTIVE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 74465000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 74885000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 75095000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_TX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75095000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75245000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x100
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75335000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x200
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75425000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x300
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75515000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x400
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75605000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x500
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 75695000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x600
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 75785000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write to module DTI with register DTI_SPI_FIFO_TX_WRITE_ENABLE with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 76145000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 77295000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 78445000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 79595000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 80745000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 81027500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 81027500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 81895000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 83045000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 84195000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 85345000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 86377500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 86377500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xab
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 86495000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 87645000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 88795000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 89945000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 91095000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 91727500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x2
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 91727500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0xcd
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 92245000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 93395000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 94545000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 95695000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 96845000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 97077500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x3
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 97077500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x24
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 97995000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 99145000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 100295000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 101445000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 102427500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x4
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 102427500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x36
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 102595000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 103745000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 104895000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 106045000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 107195000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 107777500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 107777500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x47
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 108345000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 109495000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 110645000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 111795000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 112945000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 113127500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 113127500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x58
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 114095000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Polling register DTI_SPI_ACTIVE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 114305000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x7
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 114515000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_TX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 114665000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 114755000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x1ab
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 114845000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x2cd
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 114935000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x324
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 115025000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x436
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 115115000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x547
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 115205000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x658
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 115355000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_RX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 115565000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check register DTI_SPI_TX_FIFO_COUNT with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 115565000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8348
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 115865000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 117015000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 118165000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 119315000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 120465000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 120897500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x83
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 120897500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x48
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 120897500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x58
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 121615000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Polling register DTI_SPI_ACTIVE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 121615000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x300
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 121915000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 123065000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 124215000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 125365000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 126515000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 126947500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x3
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 126947500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x48
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 127665000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Polling register DTI_SPI_ACTIVE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 127815000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x348
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 127815000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x8658
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 128055000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/oled_spi_agent/oled_spi_agent_monitor.svh(62) @ 128957500: uvm_test_top.m_env.m_oled_spi_agent.m_monitor [oled_spi_agent_monitor] OLED SPI monitor write value: 0xae
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 129205000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 130355000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 131505000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 132655000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(77) @ 133087500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor address value: 0x86
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(78) @ 133087500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Write 4-wire SPI monitor data value: 0x58
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 133087500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x48
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 133805000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Polling register DTI_SPI_ACTIVE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 133805000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Write memory DTISPITXFIFO with value: 0x600
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 134105000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 135255000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 136405000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 137555000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 138705000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Warning: Polling register DTI_SPI_ACTIVE with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(80) @ 139137500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor address value: 0x6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/spi_4wire_agent/spi_4wire_agent_monitor.svh(81) @ 139137500: uvm_test_top.m_env.m_spi_4wire_agent.m_monitor [spi_4wire_agent_monitor]  Read 4-wire SPI monitor data value: 0x58
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 139855000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Polling register DTI_SPI_ACTIVE with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 140005000: reporter@@m_psif_dti_spi_seq [psif_dti_spi_seq] Check memory DTISPIRXFIFO with value: 0x658
+UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 140005000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/kb_axi4lite_agent_driver.svh(43) @ 140005000: uvm_test_top.m_env.m_psif_axi4lite_master_agent.m_driver [kb_axi4lite_agent_driver:report] 153 AXI4Lite_Agent sequence items

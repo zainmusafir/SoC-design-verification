@@ -1,0 +1,1581 @@
+# ** Note: Multiple occurrences of ini variable gtwizard_ultrascale_v1_7_9 are found, only first occurence will be considered.
+# ** Note: Multiple occurrences of ini variable gtwizard_ultrascale_v1_7_9 are found, only first occurence will be considered.
+# ** Note: Multiple occurrences of ini variable xpm are found, only first occurence will be considered.
+# ** Note: Multiple occurrences of ini variable xpm are found, only first occurence will be considered.
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Warning: License feature 'msimviewer' will expire in 9 days.
+# vsim -lib tb_mla_lib -L unisim -L unimacro -L mla_lib -L xpm -L gtwizard_ultrascale_v1_7_9 -L xil_defaultlib -autoexclusionsdisable=fsm -fsmdebug -assertdebug "+notimingchecks" -printsimstats -msgmode both -modelsimini /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/modelsim.ini -coverage -t ps -classdebug -uvmcontrol=all,certe "+UVM_MAX_QUIT_COUNT=11" -scdpidebug -onfinish stop -sv_seed 42 "+UVM_VERBOSITY=UVM_MEDIUM" -voptargs=""+acc=v"" "+uvm_set_action="*,_ALL_,UVM_ERROR,UVM_DISPLAY|UVM_STOP"" -gui "+UVM_TESTNAME=psif_dti_spi_test" -do "/uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/run_gui.do" tb_top -GHLSMODULE=AES128 -GTARGET=ZEDBOARD 
+# Start time: 16:47:43 on Nov 21,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 9 days.
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_psif_vreguvm_pkg_uvm_rw(fast)
+# Loading work.top_psif_vreguvm_pkg_uvm(fast)
+# Loading work.kb_axi4lite_agent_if(fast)
+# Loading work.typedef_pkg(fast)
+# Loading work.kb_axi4lite_agent_pkg(fast)
+# Loading work.reset_agent_if(fast)
+# Loading work.reset_agent_pkg(fast)
+# Loading work.tb_env_base_pkg(fast)
+# Loading work.kb_axi4stream_agent_if(fast)
+# Loading work.kb_axi4stream_typedef_pkg(fast)
+# Loading work.kb_axi4stream_agent_pkg(fast)
+# Loading work.spi_4wire_agent_if(fast)
+# Loading work.spi_4wire_agent_pkg(fast)
+# Loading work.oled_spi_agent_if(fast)
+# Loading work.oled_spi_agent_pkg(fast)
+# Loading work.tb_top_core_zu_aes128_bind(fast)
+# Loading work.tb_top_core_dti_bind(fast)
+# Loading work.tb_top_core_dti_dti_spi_bind(fast)
+# Loading work.tb_top_core_odi_oled_ctrl_bind(fast)
+# Loading work.probe_pkg(fast)
+# Loading work.tb_env_pkg(fast)
+# Loading work.axi4params_pkg(fast)
+# Loading work.base_seq_pkg(fast)
+# Loading work.base_test_pkg(fast)
+# Loading work.psif_aui_aurora_pkg(fast)
+# Loading work.psif_zu_csim_pkg(fast)
+# Loading work.psif_zu_pkg(fast)
+# Loading work.psif_dti_spi_module_pkg(fast)
+# Loading work.psif_dti_spi_pkg(fast)
+# Loading work.psif_dti_spi_loop_pkg(fast)
+# Loading work.psif_scu_pkg(fast)
+# Loading work.psif_odi_spi_pkg(fast)
+# Loading work.psif_ram_pkg(fast)
+# Loading work.psif_reg_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.reset_agent_if(fast__2)
+# Loading work.oled_spi_agent_if(fast__2)
+# Loading work.spi_4wire_agent_if(fast__2)
+# Loading work.kb_axi4lite_agent_if_sv_unit(fast)
+# Loading work.kb_axi4lite_agent_if(fast__2)
+# Loading work.kb_axi4stream_agent_if(fast__2)
+# Loading xil_defaultlib.aurora_8b10b_0_exdes(fast)
+# Loading xil_defaultlib.aurora_8b10b_0_support(fast)
+# ** Warning: License feature 'msimhdlmix' will expire in 9 days.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading psif_lib.psif_pck
+# Loading mla_lib.target_pck
+# Loading mla_lib.top(str)#1
+# Loading mla_lib.clk_wiz_0(structure)#1
+# Loading mla_lib.clk_wiz_0_clk_wiz_0_clk_wiz(structure)#1
+# Loading unisim.bufg(bufg_v)#1
+# Loading unisim.ibuf(ibuf_v)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.mmcme2_adv(mmcme2_adv_v)#1
+# Loading mla_lib.cru(rtl)#1
+# Loading mla_lib.processor_system(structure)#1
+# Loading unisim.iobuf(iobuf_v)#1
+# Loading psif_lib.odi_pck
+# Loading psif_lib.dti_pck
+# Loading mla_lib.core(str)#1
+# Loading mla_lib.psif_axi4pifb(rtl)#1
+# Loading mla_lib.odi(str)#1
+# Loading mla_lib.odi_reg(rtl)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading mla_lib.oled_ctrl(behavioral)#1
+# Loading verilog.vl_resolve(body)
+# Loading verilog.vl_types(body)
+# Loading mla_lib.oled_init(behavioral)#1
+# Loading mla_lib.spi_ctrl(behavioral)#2
+# Loading work.probe_itf(fast__1)
+# Loading work.probe_itf(fast__2)
+# Loading mla_lib.delay(behavioral)#1
+# Loading mla_lib.oled_ex(behavioral)#1
+# Loading mla_lib.spi_ctrl(behavioral)#1
+# Loading mla_lib.ascii_rom(behavioral)#1
+# Loading mla_lib.dti(str)#1
+# Loading mla_lib.dti_reg(rtl)#1
+# Loading mla_lib.fifo_512x16bit(structure)#2
+# Loading unisim.gnd(gnd_v)#1
+# Loading unisim.lut4(lut4_v)#1
+# Loading unisim.lut2(lut2_v)#1
+# Loading mla_lib.fifo_512x16bit_xpm_cdc_gray(structure)#1
+# Loading unisim.fdre(fdre_v)#1
+# Loading unisim.lut4(lut4_v)#2
+# Loading unisim.lut3(lut3_v)#1
+# Loading unisim.lut2(lut2_v)#2
+# Loading unisim.lut6(lut6_v)#1
+# Loading unisim.lut5(lut5_v)#1
+# Loading mla_lib.\fifo_512x16bit_xpm_cdc_gray__2\(structure)#2
+# Loading unisim.carry4(carry4_v)#1
+# Loading unisim.fdce(fdce_v)#1
+# Loading unisim.lut3(lut3_v)#2
+# Loading unisim.lut4(lut4_v)#3
+# Loading unisim.lut2(lut2_v)#3
+# Loading unisim.fdpe(fdpe_v)#1
+# Loading unisim.lut1(lut1_v)#1
+# Loading unisim.lut3(lut3_v)#3
+# Loading unisim.lut4(lut4_v)#4
+# Loading unisim.lut5(lut5_v)#2
+# Loading unisim.lut6(lut6_v)#2
+# Loading unisim.lut6(lut6_v)#3
+# Loading unisim.ramb18e1(ramb18e1_v)#1
+# Loading ieee.std_logic_textio(body)
+# Loading unisim.rb18_internal_vhdl(rb18_internal_vhdl_v)#1
+# Loading unisim.lut1(lut1_v)#2
+# Loading mla_lib.fifo_512x16bit_xpm_cdc_async_rst(structure)#1
+# Loading unisim.fdpe(fdpe_v)#2
+# Loading unisim.lut3(lut3_v)#4
+# Loading mla_lib.fifo_512x16bit_xpm_cdc_single(structure)#1
+# Loading mla_lib.\fifo_512x16bit_xpm_cdc_single__2\(structure)#2
+# Loading mla_lib.\fifo_512x16bit_xpm_cdc_async_rst__1\(structure)#2
+# Loading mla_lib.spictrl(rtl)#1
+# Loading mla_lib.dti_spi(rtl)#1
+# Loading work.probe_itf(fast__3)
+# Loading psif_lib.zu_pck
+# Loading mla_lib.zu(str)#1
+# Loading mla_lib.zu_reg(rtl)#1
+# Loading mla_lib.zu_fsm(rtl)#1
+# Loading mla_lib.bram_truedualport_512x32bit(structure)#1
+# Loading unisim.ramb36e1(ramb36e1_v)#1
+# Loading unisim.rb36_internal_vhdl(rb36_internal_vhdl_v)#1
+# Loading mla_lib.aes_inv_cipher(behav)#1
+# ** Warning: (vsim-3473) Component instance "state_U : aes_inv_cipher_state" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0/aes128_inv_cipher_0 File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd
+# ** Warning: (vsim-3473) Component instance "grp_inv_mix_columns_fu_218 : inv_mix_columns" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0/aes128_inv_cipher_0 File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd
+# ** Warning: (vsim-3473) Component instance "grp_add_round_key_fu_223 : add_round_key" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0/aes128_inv_cipher_0 File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd
+# ** Warning: (vsim-3473) Component instance "grp_inv_shift_rows_fu_233 : inv_shift_rows" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0/aes128_inv_cipher_0 File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd
+# ** Warning: (vsim-3473) Component instance "grp_inv_sub_bytes_fu_238 : inv_sub_bytes" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0/aes128_inv_cipher_0 File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd
+# Loading work.probe_itf(fast__4)
+# Loading work.probe_itf(fast__5)
+# ** Warning: (vsim-3473) Component instance "ila_zu_0 : ila_zu" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0 File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/zu/hdl/zu_str.vhd
+# Loading psif_lib.scu_pck
+# Loading mla_lib.scu(str)#1
+# Loading mla_lib.scu_reg(rtl)#1
+# Loading mla_lib.scu_fsm(rtl)#1
+# Loading psif_lib.aui_pck
+# Loading mla_lib.aui(str)#1
+# Loading mla_lib.aui_reg(rtl)#1
+# Loading xil_defaultlib.aurora_8b10b_0(fast)
+# Loading unisim.ibufds_gte4(ibufds_gte4_v)#1
+# Loading unisim.bufg_gt(bufg_gt_v)#1
+# Loading unisim.fdr(fdr_v)#1
+# Loading unisim.gthe4_channel(gthe4_channel_v)#3
+# Loading secureip.SIP_GTHE4_CHANNEL(fast)
+# Loading unisim.fd(fd_v)#1
+# Loading unisim.srl16(srl16_v)#1
+# Loading unisim.fd(fd_v)#2
+# Loading unisim.muxcy(muxcy_v)#1
+# Loading mla_lib.aui_auroratxctrl(rtl)#1
+# Loading mla_lib.fifo_512x32bit(structure)#2
+# Loading mla_lib.fifo_512x32bit_xpm_cdc_gray(structure)#1
+# Loading mla_lib.\fifo_512x32bit_xpm_cdc_gray__2\(structure)#2
+# Loading unisim.fdse(fdse_v)#1
+# Loading unisim.srl16e(srl16e_v)#1
+# Loading unisim.fdse(fdse_v)#2
+# Loading unisim.fdre(fdre_v)#2
+# Loading unisim.srl16e(srl16e_v)#2
+# Loading unisim.lut4(lut4_v)#5
+# Loading unisim.lut3(lut3_v)#5
+# Loading unisim.lut2(lut2_v)#4
+# Loading mla_lib.\fifo_512x32bit_xpm_cdc_sync_rst__parameterized2\(structure)#2
+# Loading unisim.lut4(lut4_v)#6
+# Loading unisim.lut6(lut6_v)#4
+# Loading mla_lib.fifo_512x32bit_xpm_cdc_single(structure)#1
+# Loading mla_lib.\fifo_512x32bit_xpm_cdc_single__2\(structure)#2
+# Loading mla_lib.fifo_512x32bit_xpm_cdc_sync_rst(structure)#1
+# Loading unisim.fdre(fdre_v)#3
+# Loading mla_lib.\fifo_512x32bit_xpm_cdc_sync_rst__2\(structure)#2
+# Loading mla_lib.aui_aurorarxctrl(rtl)#1
+# ** Warning: (vsim-3473) Component instance "ila_scu_0 : ila_scu" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/core/hdl/core_str.vhd
+# Loading mla_lib.synchronizer(rtl)#1
+# Loading mla_lib.scu_edge_regenerator(rtl)#1
+# Loading mla_lib.fifo_512x8bit(structure)#1
+# Loading mla_lib.fifo_512x8bit_xpm_cdc_gray(structure)#1
+# Loading mla_lib.\fifo_512x8bit_xpm_cdc_gray__2\(structure)#1
+# Loading mla_lib.fifo_512x8bit_xpm_cdc_async_rst(structure)#1
+# Loading mla_lib.fifo_512x8bit_xpm_cdc_single(structure)#1
+# Loading mla_lib.\fifo_512x8bit_xpm_cdc_single__2\(structure)#1
+# Loading mla_lib.\fifo_512x8bit_xpm_cdc_async_rst__1\(structure)#1
+# Loading unisim.ibufds(ibufds_v)#1
+# Loading unisim.bufg(bufg_v)#2
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'WData'. The port definition is at: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/probe_pkg.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/mla_top/mla_pl/zu_0/aes128_inv_cipher_0/aes_inv_cipher_probe_bypass File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_top_core_zu_aes128_bind.sv Line: 2
+# ** Warning: (vsim-3764) Stand-alone call to function 'begin_tr' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /kb_axi4lite_agent_pkg::kb_axi4lite_agent_driver File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/kb_axi4lite_agent_driver.svh Line: 62
+# ** Warning: (vsim-3764) Stand-alone call to function 'try_put' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg::coverage_oled_spi File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/coverage_oled_spi.svh Line: 106
+# ** Warning: (vsim-3764) Stand-alone call to function 'try_put' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg::coverage_dti_spi File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/coverage_dti_spi.svh Line: 119
+# Loading /uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ** Warning: (vsim-3770) Failed to find user specified function 'aes_cipher' in DPI precompiled library search list "/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_env_pkg.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'aes_cipher' in DPI precompiled library search list "/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_env_pkg.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'aes_inv_cipher' in DPI precompiled library search list "/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_env_pkg.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'aes_inv_cipher' in DPI precompiled library search list "/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_env_pkg.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'aes_cipher' in DPI precompiled library search list "/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_env_pkg.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'aes_cipher' in DPI precompiled library search list "/uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so ".
+#    Time: 0 ps  Iteration: 0  Region: /tb_env_pkg File: /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb/tb_env_pkg.sv
+# ** Warning: License feature 'svverification' will expire in 9 days.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(14) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(13) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(12) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_addr(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_ba(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_ba(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_ba(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_cas_n has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_ck_n has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_ck_p has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_cke has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_cs_n has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dm(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dm(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dm(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dm(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(31) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(30) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(29) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(28) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(27) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(26) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(25) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(24) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(23) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(22) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(21) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(19) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(18) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(17) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(16) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(15) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(14) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(13) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(12) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dq(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_n(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_n(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_n(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_n(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_p(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_p(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_p(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_dqs_p(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_odt has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_ras_n has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_reset_n has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/DDR_we_n has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_ddr_vrn has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_ddr_vrp has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(53) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(52) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(51) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(50) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(49) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(48) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(47) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(46) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(45) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(44) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(43) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(42) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(41) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(40) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(39) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(38) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(37) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(36) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(35) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(34) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(33) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(32) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(31) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(30) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(29) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(28) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(27) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(26) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(25) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(24) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(23) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(22) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(21) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(19) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(18) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(17) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(16) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(15) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(14) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(13) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(12) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_mio(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_ps_clk has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_ps_porb has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_top/mla_top/G_PS/mla_ps/FIXED_IO_ps_srstb has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/mla_top/mla_pl/psif_irq(31 downto 0) has no driver.
+# This port will contribute value (32'hXXXXXXXX) to the signal network.
+# ** Warning: License feature 'msimcoverage' will expire in 9 days.
+# do /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/scripts/questa/run_gui.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_AURORA_ACCESS_LOOP_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_AURORA_GT_RESET_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_AURORA_LOOPBACK_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_AURORA_RESET_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_RESET_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'DTI_SPI_FIFO_TX_WRITE_ENABLE_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'DTI_SPI_LOOP_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'DTI_SPI_PS_ACCESS_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_OLEDBYTE11_8_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_OLEDBYTE15_12_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_OLEDBYTE3_0_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_OLEDBYTE7_4_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_PS_ACCESS_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_DTI_READ_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_FSM_RST_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_OLEDBYTE11_8_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_OLEDBYTE15_12_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_OLEDBYTE3_0_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_OLEDBYTE7_4_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_TEMPERATURE_TEST_DIGIT0_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_TEMPERATURE_TEST_DIGIT1_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_TEMPERATURE_TEST_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_ZU_DATA_ENA_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ZUKEY_mem' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ZUPACKET_mem' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ZU_DECRYPTION_BYPASS_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ZU_FSM_RST_reg' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_module_ODI_map_coverage' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ODI_module' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'DTI_module_DTI_map_coverage' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'DTI_module' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ZU_module_ZU_map_coverage' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'ZU_module' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_module_SCU_map_coverage' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'SCU_module' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_module_AUI_map_coverage' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'AUI_module' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
+# UVM_INFO @ 0: reporter [RNTST] Running test psif_dti_spi_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=11' provided on the command line is being applied.
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_map.svh(997) @ 0: reporter [RegModel] Adding 2-byte submap 'm_psif_regs_all.DTI.DTI_map' to 4-byte parent map 'm_psif_regs_all.top_if_map'
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_map.svh(997) @ 0: reporter [RegModel] Adding 1-byte submap 'm_psif_regs_all.ZU.ZU_map' to 4-byte parent map 'm_psif_regs_all.top_if_map'
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_map.svh(997) @ 0: reporter [RegModel] Adding 2-byte submap 'm_psif_regs_all.AUI.AUI_map' to 4-byte parent map 'm_psif_regs_all.top_if_map'
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_map.svh(997) @ 0: reporter [RegModel] Adding 1-byte submap 'm_psif_regs_rw.DTI.DTI_map' to 4-byte parent map 'm_psif_regs_rw.top_if_map'
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_map.svh(997) @ 0: reporter [RegModel] Adding 1-byte submap 'm_psif_regs_rw.ZU.ZU_map' to 4-byte parent map 'm_psif_regs_rw.top_if_map'
+# UVM_WARNING verilog_src/uvm-1.1d/src/reg/uvm_reg_map.svh(997) @ 0: reporter [RegModel] Adding 1-byte submap 'm_psif_regs_rw.AUI.AUI_map' to 4-byte parent map 'm_psif_regs_rw.top_if_map'
+# 
+#### Factory Configuration (*)
+# 
+# No instance overrides are registered with this factory
+# 
+# Type Overrides:
+# 
+#   Requested Type         Override Type   
+#   ---------------------  ----------------
+#   coverage_dti_spi_base  coverage_dti_spi
+# 
+# All types registered with the factory: 240 total
+# (types without type names will not be printed)
+# 
+#   Type Name
+#   ---------
+#   AUIAURORARXFIFO_mem
+#   AUIAURORATXFIFO_mem
+#   AUI_AURORA_ACCESS_LOOP_ENA_reg
+#   AUI_AURORA_CORE_STATUS_reg
+#   AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg
+#   AUI_AURORA_GT_RESET_reg
+#   AUI_AURORA_LOOPBACK_reg
+#   AUI_AURORA_PS_RXFIFO_COUNT_reg
+#   AUI_AURORA_PS_TXFIFO_COUNT_reg
+#   AUI_AURORA_RESET_reg
+#   AUI_RESET_reg
+#   AUI_module
+#   AUI_module_AUI_map_coverage
+#   DTISPIRXFIFO_mem
+#   DTISPITXFIFO_mem
+#   DTI_SPI_ACTIVE_reg
+#   DTI_SPI_FIFO_TX_WRITE_ENABLE_reg
+#   DTI_SPI_LOOP_ENA_reg
+#   DTI_SPI_PS_ACCESS_ENA_reg
+#   DTI_SPI_RX_FIFO_COUNT_reg
+#   DTI_SPI_TX_FIFO_COUNT_reg
+#   DTI_module
+#   DTI_module_DTI_map_coverage
+#   ODI_OLEDBYTE11_8_reg
+#   ODI_OLEDBYTE15_12_reg
+#   ODI_OLEDBYTE3_0_reg
+#   ODI_OLEDBYTE7_4_reg
+#   ODI_PS_ACCESS_ENA_reg
+#   ODI_module
+#   ODI_module_ODI_map_coverage
+#   SCU_ALARM_ACK_BUTTON_reg
+#   SCU_DTI_READ_ENA_reg
+#   SCU_FSM_RST_reg
+#   SCU_OLEDBYTE11_8_reg
+#   SCU_OLEDBYTE15_12_reg
+#   SCU_OLEDBYTE3_0_reg
+#   SCU_OLEDBYTE7_4_reg
+#   SCU_TEMPERATURE_TEST_DIGIT0_reg
+#   SCU_TEMPERATURE_TEST_DIGIT1_reg
+#   SCU_TEMPERATURE_TEST_ENA_reg
+#   SCU_ZU_BYTE_CNT_ERROR_reg
+#   SCU_ZU_DATA_ENA_reg
+#   SCU_ZU_TDATA_CNT_reg
+#   SCU_module
+#   SCU_module_SCU_map_coverage
+#   ZUKEY_mem
+#   ZUPACKET_mem
+#   ZU_DECRYPTION_BYPASS_reg
+#   ZU_DONE_DECRYPTION_reg
+#   ZU_FSM_RST_reg
+#   ZU_START_DECRYPTION_reg
+#   ZU_module
+#   ZU_module_ZU_map_coverage
+#   aurora_seq
+#   aurora_seq_base
+#   base_seq
+#   base_test
+#   coverage_base
+#   coverage_dti_spi
+#   coverage_dti_spi_base
+#   coverage_oled_spi
+#   coverage_oled_spi_base
+#   coverage_override
+#   kb_axi4lite_agent
+#   kb_axi4lite_agent_config
+#   kb_axi4lite_agent_coverage_monitor
+#   kb_axi4lite_agent_driver
+#   kb_axi4lite_agent_item
+#   kb_axi4lite_agent_monitor
+#   kb_axi4stream_agent
+#   kb_axi4stream_agent_config
+#   kb_axi4stream_agent_driver
+#   kb_axi4stream_agent_item
+#   kb_axi4stream_agent_monitor
+#   oled_spi_agent
+#   oled_spi_agent_config
+#   oled_spi_agent_driver
+#   oled_spi_agent_item
+#   oled_spi_agent_monitor
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_probe_busy
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_probe_mclk
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_probe_rd_data
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_probe_rd_str
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_probe_wr_data
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_probe_wr_str
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_busy
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_instr
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_mclk
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_rd_str
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_rdata
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_wdata
+#   probe_tb_top.mla_top.mla_pl.dti_0.dti_spi_0.dti_spi_probe_wr_str
+#   probe_tb_top.mla_top.mla_pl.odi_0.oled_ctrl_0.Example.example_probe_alphabet_done_str
+#   probe_tb_top.mla_top.mla_pl.odi_0.oled_ctrl_0.Example.spi_comp.example_spi_comp_probe_en
+#   probe_tb_top.mla_top.mla_pl.odi_0.oled_ctrl_0.Example.spi_comp.example_spi_comp_probe_sdata
+#   probe_tb_top.mla_top.mla_pl.odi_0.oled_ctrl_0.Initialize.initialize_probe_init_done
+#   probe_tb_top.mla_top.mla_pl.odi_0.oled_ctrl_0.Initialize.spi_comp.initilize_spi_comp_probe_en
+#   probe_tb_top.mla_top.mla_pl.odi_0.oled_ctrl_0.Initialize.spi_comp.initilize_spi_comp_probe_sdata
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_ap_clk
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_ap_done
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_ap_start
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_bypass
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_out_r_tdata
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_out_r_tready
+#   probe_tb_top.mla_top.mla_pl.zu_0.aes128_inv_cipher_0.aes_inv_cipher_probe_out_r_tvalid
+#   psif_aui_aurora_init_seq
+#   psif_aui_aurora_loop_seq
+#   psif_aui_aurora_rx_seq
+#   psif_aui_aurora_seq_virtual
+#   psif_aui_aurora_test
+#   psif_aui_aurora_tx_seq
+#   psif_dti_spi_loop_seq
+#   psif_dti_spi_loop_seq_virtual
+#   psif_dti_spi_loop_test
+#   psif_dti_spi_module_seq
+#   psif_dti_spi_module_seq_virtual
+#   psif_dti_spi_module_test
+#   psif_dti_spi_seq
+#   psif_dti_spi_seq_virtual
+#   psif_dti_spi_test
+#   psif_odi_spi_seq
+#   psif_odi_spi_seq_virtual
+#   psif_odi_spi_test
+#   psif_ram_test
+#   psif_reg_seq
+#   psif_reg_test
+#   psif_scu_seq
+#   psif_scu_seq_virtual
+#   psif_scu_test
+#   psif_zu_csim_seq
+#   psif_zu_csim_seq_virtual
+#   psif_zu_csim_test
+#   psif_zu_seq
+#   psif_zu_seq_virtual
+#   psif_zu_test
+#   questa_uvm_recorder
+#   reg2axi4lite_adapter
+#   reset_agent
+#   reset_agent_config
+#   reset_agent_driver
+#   reset_agent_item
+#   scoreboard_base
+#   scoreboard_dti_spi
+#   scoreboard_dti_spi_base
+#   scoreboard_oled_spi
+#   scoreboard_oled_spi_base
+#   scoreboard_override
+#   scoreboard_zu_aes128
+#   scoreboard_zu_base
+#   spi_4wire_agent
+#   spi_4wire_agent_config
+#   spi_4wire_agent_driver
+#   spi_4wire_agent_item
+#   spi_4wire_agent_monitor
+#   spi_4wire_seq
+#   tb_env
+#   top_PSIF
+#   top_PSIF_rw
+#   top_reset_seq
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# Name                                   Type                                 Size  Value                                                    
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# m_psif_regs_all                        top_PSIF                             -     @544                                                     
+#   AUI                                  AUI_module                           -     @720                                                     
+#     AUI_RESET                          AUI_RESET_reg                        -     @727                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_RESET[0:0]=1'h0                                  
+#     AUI_AURORA_RESET                   AUI_AURORA_RESET_reg                 -     @742                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_RESET[0:0]=1'h0                           
+#     AUI_AURORA_PS_TXFIFO_COUNT         AUI_AURORA_PS_TXFIFO_COUNT_reg       -     @752                                                     
+#       data                             uvm_reg_field                        ...    RO AUI_AURORA_PS_TXFIFO_COUNT[8:0]=9'h000               
+#     AUI_AURORA_PS_RXFIFO_COUNT         AUI_AURORA_PS_RXFIFO_COUNT_reg       -     @757                                                     
+#       data                             uvm_reg_field                        ...    RO AUI_AURORA_PS_RXFIFO_COUNT[8:0]=9'h000               
+#     AUI_AURORA_LOOPBACK                AUI_AURORA_LOOPBACK_reg              -     @737                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_LOOPBACK[2:0]=3'h0                        
+#     AUI_AURORA_GT_RESET                AUI_AURORA_GT_RESET_reg              -     @747                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_GT_RESET[0:0]=1'h0                        
+#     AUI_AURORA_FIFO_TX_WRITE_ENABLE    AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  -     @762                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_FIFO_TX_WRITE_ENABLE[0:0]=1'h0            
+#     AUI_AURORA_CORE_STATUS             AUI_AURORA_CORE_STATUS_reg           -     @732                                                     
+#       data                             uvm_reg_field                        ...    RO AUI_AURORA_CORE_STATUS[12:0]=13'h0000                
+#     AUI_AURORA_ACCESS_LOOP_ENA         AUI_AURORA_ACCESS_LOOP_ENA_reg       -     @767                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_ACCESS_LOOP_ENA[0:0]=1'h0                 
+#     AUI_map                            uvm_reg_map                          -     @771                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @727 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @742 +'h51044                                            
+#       AUI_AURORA_PS_TXFIFO_COUNT       AUI_AURORA_PS_TXFIFO_COUNT_reg       ...   @752 +'h5104c                                            
+#       AUI_AURORA_PS_RXFIFO_COUNT       AUI_AURORA_PS_RXFIFO_COUNT_reg       ...   @757 +'h51050                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @737 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @747 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @762 +'h51054                                            
+#       AUI_AURORA_CORE_STATUS           AUI_AURORA_CORE_STATUS_reg           ...   @732 +'h5103c                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @767 +'h51058                                            
+#   SCU                                  SCU_module                           -     @647                                                     
+#     SCU_ZU_TDATA_CNT                   SCU_ZU_TDATA_CNT_reg                 -     @694                                                     
+#       data                             uvm_reg_field                        ...    RO SCU_ZU_TDATA_CNT[7:0]=8'h00                          
+#     SCU_ZU_DATA_ENA                    SCU_ZU_DATA_ENA_reg                  -     @654                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_ZU_DATA_ENA[0:0]=1'h0                            
+#     SCU_ZU_BYTE_CNT_ERROR              SCU_ZU_BYTE_CNT_ERROR_reg            -     @699                                                     
+#       data                             uvm_reg_field                        ...    RO SCU_ZU_BYTE_CNT_ERROR[0:0]=1'h0                      
+#     SCU_TEMPERATURE_TEST_ENA           SCU_TEMPERATURE_TEST_ENA_reg         -     @704                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_ENA[0:0]=1'h0                   
+#     SCU_TEMPERATURE_TEST_DIGIT1        SCU_TEMPERATURE_TEST_DIGIT1_reg      -     @714                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT1[3:0]=4'h0                
+#     SCU_TEMPERATURE_TEST_DIGIT0        SCU_TEMPERATURE_TEST_DIGIT0_reg      -     @709                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT0[3:0]=4'h0                
+#     SCU_OLEDBYTE7_4                    SCU_OLEDBYTE7_4_reg                  -     @679                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE7_4[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE3_0                    SCU_OLEDBYTE3_0_reg                  -     @674                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE3_0[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE15_12                  SCU_OLEDBYTE15_12_reg                -     @689                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE15_12[31:0]=32'h00000000                 
+#     SCU_OLEDBYTE11_8                   SCU_OLEDBYTE11_8_reg                 -     @684                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE11_8[31:0]=32'h00000000                  
+#     SCU_FSM_RST                        SCU_FSM_RST_reg                      -     @664                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_FSM_RST[0:0]=1'h0                                
+#     SCU_DTI_READ_ENA                   SCU_DTI_READ_ENA_reg                 -     @659                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_DTI_READ_ENA[0:0]=1'h0                           
+#     SCU_ALARM_ACK_BUTTON               SCU_ALARM_ACK_BUTTON_reg             -     @669                                                     
+#       data                             uvm_reg_field                        ...    RO SCU_ALARM_ACK_BUTTON[0:0]=1'h0                       
+#     SCU_map                            uvm_reg_map                          -     @718                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_TDATA_CNT                 SCU_ZU_TDATA_CNT_reg                 ...   @694 +'h40020                                            
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @654 +'h40000                                            
+#       SCU_ZU_BYTE_CNT_ERROR            SCU_ZU_BYTE_CNT_ERROR_reg            ...   @699 +'h40024                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @704 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @714 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @709 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @679 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @674 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @689 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @684 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @664 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @659 +'h40004                                            
+#       SCU_ALARM_ACK_BUTTON             SCU_ALARM_ACK_BUTTON_reg             ...   @669 +'h4000c                                            
+#   ZU                                   ZU_module                            -     @619                                                     
+#     ZU_START_DECRYPTION                ZU_START_DECRYPTION_reg              -     @631                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_START_DECRYPTION[0:0]=1'h0                        
+#     ZU_FSM_RST                         ZU_FSM_RST_reg                       -     @641                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_FSM_RST[0:0]=1'h0                                 
+#     ZU_DONE_DECRYPTION                 ZU_DONE_DECRYPTION_reg               -     @636                                                     
+#       data                             uvm_reg_field                        ...    RO ZU_DONE_DECRYPTION[0:0]=1'h0                         
+#     ZU_DECRYPTION_BYPASS               ZU_DECRYPTION_BYPASS_reg             -     @626                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_DECRYPTION_BYPASS[0:0]=1'h0                       
+#     ZU_map                             uvm_reg_map                          -     @645                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_START_DECRYPTION              ZU_START_DECRYPTION_reg              ...   @631 +'h30004                                            
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @641 +'h3000c                                            
+#       ZU_DONE_DECRYPTION               ZU_DONE_DECRYPTION_reg               ...   @636 +'h30008                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @626 +'h30000                                            
+#   DTI                                  DTI_module                           -     @581                                                     
+#     DTI_SPI_TX_FIFO_COUNT              DTI_SPI_TX_FIFO_COUNT_reg            -     @598                                                     
+#       data                             uvm_reg_field                        ...    RO DTI_SPI_TX_FIFO_COUNT[8:0]=9'h000                    
+#     DTI_SPI_RX_FIFO_COUNT              DTI_SPI_RX_FIFO_COUNT_reg            -     @603                                                     
+#       data                             uvm_reg_field                        ...    RO DTI_SPI_RX_FIFO_COUNT[8:0]=9'h000                    
+#     DTI_SPI_PS_ACCESS_ENA              DTI_SPI_PS_ACCESS_ENA_reg            -     @613                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_PS_ACCESS_ENA[0:0]=1'h0                      
+#     DTI_SPI_LOOP_ENA                   DTI_SPI_LOOP_ENA_reg                 -     @608                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_LOOP_ENA[0:0]=1'h0                           
+#     DTI_SPI_FIFO_TX_WRITE_ENABLE       DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     -     @588                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_FIFO_TX_WRITE_ENABLE[0:0]=1'h0               
+#     DTI_SPI_ACTIVE                     DTI_SPI_ACTIVE_reg                   -     @593                                                     
+#       data                             uvm_reg_field                        ...    RO DTI_SPI_ACTIVE[0:0]=1'h0                             
+#     DTI_map                            uvm_reg_map                          -     @617                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_TX_FIFO_COUNT            DTI_SPI_TX_FIFO_COUNT_reg            ...   @598 +'h20068                                            
+#       DTI_SPI_RX_FIFO_COUNT            DTI_SPI_RX_FIFO_COUNT_reg            ...   @603 +'h2006c                                            
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @613 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @608 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @588 +'h20060                                            
+#       DTI_SPI_ACTIVE                   DTI_SPI_ACTIVE_reg                   ...   @593 +'h20064                                            
+#   ODI                                  ODI_module                           -     @547                                                     
+#     ODI_PS_ACCESS_ENA                  ODI_PS_ACCESS_ENA_reg                -     @575                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_PS_ACCESS_ENA[0:0]=1'h0                          
+#     ODI_OLEDBYTE7_4                    ODI_OLEDBYTE7_4_reg                  -     @560                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE7_4[31:0]=32'h00000000                   
+#     ODI_OLEDBYTE3_0                    ODI_OLEDBYTE3_0_reg                  -     @555                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE3_0[31:0]=32'h00000000                   
+#     ODI_OLEDBYTE15_12                  ODI_OLEDBYTE15_12_reg                -     @570                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE15_12[31:0]=32'h00000000                 
+#     ODI_OLEDBYTE11_8                   ODI_OLEDBYTE11_8_reg                 -     @565                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE11_8[31:0]=32'h00000000                  
+#     ODI_map                            uvm_reg_map                          -     @579                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @575 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @560 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @555 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @570 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @565 +'h10068                                            
+#   ZUPACKET                             ZUPACKET_mem                         -     @776                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   ZUKEY                                ZUKEY_mem                            -     @778                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   DTISPITXFIFO                         DTISPITXFIFO_mem                     -     @772                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd2048                                                   
+#   DTISPIRXFIFO                         DTISPIRXFIFO_mem                     -     @774                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd2048                                                   
+#   AUIAURORATXFIFO                      AUIAURORATXFIFO_mem                  -     @780                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   AUIAURORARXFIFO                      AUIAURORARXFIFO_mem                  -     @782                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   top_if_map                           uvm_reg_map                          -     @784                                                     
+#     endian                                                                  ...   UVM_LITTLE_ENDIAN                                        
+#     effective sequencer                uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#     ZUPACKET                           ZUPACKET_mem                         ...   @776 +'h600000                                           
+#     ZUKEY                              ZUKEY_mem                            ...   @778 +'h800000                                           
+#     DTISPITXFIFO                       DTISPITXFIFO_mem                     ...   @772 +'h200000                                           
+#     DTISPIRXFIFO                       DTISPIRXFIFO_mem                     ...   @774 +'h400000                                           
+#     AUIAURORATXFIFO                    AUIAURORATXFIFO_mem                  ...   @780 +'ha00000                                           
+#     AUIAURORARXFIFO                    AUIAURORARXFIFO_mem                  ...   @782 +'hc00000                                           
+#     ODI_map                            uvm_reg_map                          -     @579                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @575 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @560 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @555 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @570 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @565 +'h10068                                            
+#     DTI_map                            uvm_reg_map                          -     @617                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_TX_FIFO_COUNT            DTI_SPI_TX_FIFO_COUNT_reg            ...   @598 +'h20068                                            
+#       DTI_SPI_RX_FIFO_COUNT            DTI_SPI_RX_FIFO_COUNT_reg            ...   @603 +'h2006c                                            
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @613 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @608 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @588 +'h20060                                            
+#       DTI_SPI_ACTIVE                   DTI_SPI_ACTIVE_reg                   ...   @593 +'h20064                                            
+#     ZU_map                             uvm_reg_map                          -     @645                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_START_DECRYPTION              ZU_START_DECRYPTION_reg              ...   @631 +'h30004                                            
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @641 +'h3000c                                            
+#       ZU_DONE_DECRYPTION               ZU_DONE_DECRYPTION_reg               ...   @636 +'h30008                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @626 +'h30000                                            
+#     SCU_map                            uvm_reg_map                          -     @718                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_TDATA_CNT                 SCU_ZU_TDATA_CNT_reg                 ...   @694 +'h40020                                            
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @654 +'h40000                                            
+#       SCU_ZU_BYTE_CNT_ERROR            SCU_ZU_BYTE_CNT_ERROR_reg            ...   @699 +'h40024                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @704 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @714 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @709 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @679 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @674 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @689 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @684 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @664 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @659 +'h40004                                            
+#       SCU_ALARM_ACK_BUTTON             SCU_ALARM_ACK_BUTTON_reg             ...   @669 +'h4000c                                            
+#     AUI_map                            uvm_reg_map                          -     @771                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @727 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @742 +'h51044                                            
+#       AUI_AURORA_PS_TXFIFO_COUNT       AUI_AURORA_PS_TXFIFO_COUNT_reg       ...   @752 +'h5104c                                            
+#       AUI_AURORA_PS_RXFIFO_COUNT       AUI_AURORA_PS_RXFIFO_COUNT_reg       ...   @757 +'h51050                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @737 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @747 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @762 +'h51054                                            
+#       AUI_AURORA_CORE_STATUS           AUI_AURORA_CORE_STATUS_reg           ...   @732 +'h5103c                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @767 +'h51058                                            
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# Name                                   Type                                 Size  Value                                                    
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# m_psif_regs_rw                         top_PSIF_rw                          -     @787                                                     
+#   AUI                                  AUI_module                           -     @922                                                     
+#     AUI_RESET                          AUI_RESET_reg                        -     @929                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_RESET[0:0]=1'h0                                  
+#     AUI_AURORA_RESET                   AUI_AURORA_RESET_reg                 -     @939                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_RESET[0:0]=1'h0                           
+#     AUI_AURORA_LOOPBACK                AUI_AURORA_LOOPBACK_reg              -     @934                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_LOOPBACK[2:0]=3'h0                        
+#     AUI_AURORA_GT_RESET                AUI_AURORA_GT_RESET_reg              -     @944                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_GT_RESET[0:0]=1'h0                        
+#     AUI_AURORA_FIFO_TX_WRITE_ENABLE    AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  -     @949                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_FIFO_TX_WRITE_ENABLE[0:0]=1'h0            
+#     AUI_AURORA_ACCESS_LOOP_ENA         AUI_AURORA_ACCESS_LOOP_ENA_reg       -     @954                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_ACCESS_LOOP_ENA[0:0]=1'h0                 
+#     AUI_map                            uvm_reg_map                          -     @958                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @929 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @939 +'h51044                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @934 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @944 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @949 +'h51054                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @954 +'h51058                                            
+#   SCU                                  SCU_module                           -     @864                                                     
+#     SCU_ZU_DATA_ENA                    SCU_ZU_DATA_ENA_reg                  -     @871                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_ZU_DATA_ENA[0:0]=1'h0                            
+#     SCU_TEMPERATURE_TEST_ENA           SCU_TEMPERATURE_TEST_ENA_reg         -     @906                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_ENA[0:0]=1'h0                   
+#     SCU_TEMPERATURE_TEST_DIGIT1        SCU_TEMPERATURE_TEST_DIGIT1_reg      -     @916                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT1[3:0]=4'h0                
+#     SCU_TEMPERATURE_TEST_DIGIT0        SCU_TEMPERATURE_TEST_DIGIT0_reg      -     @911                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT0[3:0]=4'h0                
+#     SCU_OLEDBYTE7_4                    SCU_OLEDBYTE7_4_reg                  -     @891                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE7_4[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE3_0                    SCU_OLEDBYTE3_0_reg                  -     @886                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE3_0[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE15_12                  SCU_OLEDBYTE15_12_reg                -     @901                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE15_12[31:0]=32'h00000000                 
+#     SCU_OLEDBYTE11_8                   SCU_OLEDBYTE11_8_reg                 -     @896                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE11_8[31:0]=32'h00000000                  
+#     SCU_FSM_RST                        SCU_FSM_RST_reg                      -     @881                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_FSM_RST[0:0]=1'h0                                
+#     SCU_DTI_READ_ENA                   SCU_DTI_READ_ENA_reg                 -     @876                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_DTI_READ_ENA[0:0]=1'h0                           
+#     SCU_map                            uvm_reg_map                          -     @920                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @871 +'h40000                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @906 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @916 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @911 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @891 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @886 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @901 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @896 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @881 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @876 +'h40004                                            
+#   ZU                                   ZU_module                            -     @846                                                     
+#     ZU_FSM_RST                         ZU_FSM_RST_reg                       -     @858                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_FSM_RST[0:0]=1'h0                                 
+#     ZU_DECRYPTION_BYPASS               ZU_DECRYPTION_BYPASS_reg             -     @853                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_DECRYPTION_BYPASS[0:0]=1'h0                       
+#     ZU_map                             uvm_reg_map                          -     @862                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @858 +'h3000c                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @853 +'h30000                                            
+#   DTI                                  DTI_module                           -     @823                                                     
+#     DTI_SPI_PS_ACCESS_ENA              DTI_SPI_PS_ACCESS_ENA_reg            -     @840                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_PS_ACCESS_ENA[0:0]=1'h0                      
+#     DTI_SPI_LOOP_ENA                   DTI_SPI_LOOP_ENA_reg                 -     @835                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_LOOP_ENA[0:0]=1'h0                           
+#     DTI_SPI_FIFO_TX_WRITE_ENABLE       DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     -     @830                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_FIFO_TX_WRITE_ENABLE[0:0]=1'h0               
+#     DTI_map                            uvm_reg_map                          -     @844                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @840 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @835 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @830 +'h20060                                            
+#   ODI                                  ODI_module                           -     @790                                                     
+#     ODI_PS_ACCESS_ENA                  ODI_PS_ACCESS_ENA_reg                -     @817                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_PS_ACCESS_ENA[0:0]=1'h0                          
+#     ODI_OLEDBYTE7_4                    ODI_OLEDBYTE7_4_reg                  -     @802                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE7_4[31:0]=32'h00000000                   
+#     ODI_OLEDBYTE3_0                    ODI_OLEDBYTE3_0_reg                  -     @797                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE3_0[31:0]=32'h00000000                   
+#     ODI_OLEDBYTE15_12                  ODI_OLEDBYTE15_12_reg                -     @812                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE15_12[31:0]=32'h00000000                 
+#     ODI_OLEDBYTE11_8                   ODI_OLEDBYTE11_8_reg                 -     @807                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE11_8[31:0]=32'h00000000                  
+#     ODI_map                            uvm_reg_map                          -     @821                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @817 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @802 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @797 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @812 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @807 +'h10068                                            
+#   ZUPACKET                             ZUPACKET_mem                         -     @959                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   ZUKEY                                ZUKEY_mem                            -     @961                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   top_if_map                           uvm_reg_map                          -     @963                                                     
+#     endian                                                                  ...   UVM_LITTLE_ENDIAN                                        
+#     effective sequencer                uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#     ZUPACKET                           ZUPACKET_mem                         ...   @959 +'h600000                                           
+#     ZUKEY                              ZUKEY_mem                            ...   @961 +'h800000                                           
+#     ODI_map                            uvm_reg_map                          -     @821                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @817 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @802 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @797 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @812 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @807 +'h10068                                            
+#     DTI_map                            uvm_reg_map                          -     @844                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @840 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @835 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @830 +'h20060                                            
+#     ZU_map                             uvm_reg_map                          -     @862                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @858 +'h3000c                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @853 +'h30000                                            
+#     SCU_map                            uvm_reg_map                          -     @920                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @871 +'h40000                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @906 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @916 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @911 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @891 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @886 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @901 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @896 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @881 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @876 +'h40004                                            
+#     AUI_map                            uvm_reg_map                          -     @958                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @929 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @939 +'h51044                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @934 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @944 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @949 +'h51054                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @954 +'h51058                                            
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# **************************************************************************
+# * Questa UVM Transaction Recording Turned ON.                            *
+# * recording_detail has been set.                                         *
+# *  To turn off, set 'recording_detail' to off:                           *
+# * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
+# * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
+# **************************************************************************
+add wave -position insertpoint sim:/tb_top/mla_top/mla_pl/dti_0/dti_spi_0/*
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/dti_0/dti_spi_tx_fifo_512x16bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/zu_0/zupacket_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/zu_0/zukey_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/aui_0/aui_aurora_ps_txfifo_512x32bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7500 ps  Iteration: 10  Instance: /tb_top/mla_top/mla_pl/zu_0/zupacket_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7500 ps  Iteration: 10  Instance: /tb_top/mla_top/mla_pl/zu_0/zukey_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7500 ps  Iteration: 10  Instance: /tb_top/mla_top/mla_pl/dti_0/dti_spi_tx_fifo_512x16bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/dti_0/dti_spi_tx_fifo_512x16bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/zu_0/zupacket_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/zu_0/zukey_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/aui_0/aui_aurora_ps_txfifo_512x32bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/dti_0/dti_spi_tx_fifo_512x16bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/zu_0/zupacket_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/zu_0/zukey_ram/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/TDP/RAMB36E1_TDP_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25 ns  Iteration: 3  Instance: /tb_top/mla_top/mla_pl/aui_0/aui_aurora_ps_txfifo_512x32bit/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/SDP/WWB36/RAMB18E1_SDP_inst
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# Name                                   Type                                 Size  Value                                                    
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# m_psif_regs_all                        top_PSIF                             -     @544                                                     
+#   AUI                                  AUI_module                           -     @720                                                     
+#     AUI_RESET                          AUI_RESET_reg                        -     @727                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_RESET[0:0]=1'h0                                  
+#     AUI_AURORA_RESET                   AUI_AURORA_RESET_reg                 -     @742                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_RESET[0:0]=1'h1                           
+#     AUI_AURORA_PS_TXFIFO_COUNT         AUI_AURORA_PS_TXFIFO_COUNT_reg       -     @752                                                     
+#       data                             uvm_reg_field                        ...    RO AUI_AURORA_PS_TXFIFO_COUNT[8:0]=9'h000               
+#     AUI_AURORA_PS_RXFIFO_COUNT         AUI_AURORA_PS_RXFIFO_COUNT_reg       -     @757                                                     
+#       data                             uvm_reg_field                        ...    RO AUI_AURORA_PS_RXFIFO_COUNT[8:0]=9'h000               
+#     AUI_AURORA_LOOPBACK                AUI_AURORA_LOOPBACK_reg              -     @737                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_LOOPBACK[2:0]=3'h0                        
+#     AUI_AURORA_GT_RESET                AUI_AURORA_GT_RESET_reg              -     @747                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_GT_RESET[0:0]=1'h1                        
+#     AUI_AURORA_FIFO_TX_WRITE_ENABLE    AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  -     @762                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_FIFO_TX_WRITE_ENABLE[0:0]=1'h0            
+#     AUI_AURORA_CORE_STATUS             AUI_AURORA_CORE_STATUS_reg           -     @732                                                     
+#       data                             uvm_reg_field                        ...    RO AUI_AURORA_CORE_STATUS[12:0]=13'h1150                
+#     AUI_AURORA_ACCESS_LOOP_ENA         AUI_AURORA_ACCESS_LOOP_ENA_reg       -     @767                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_ACCESS_LOOP_ENA[0:0]=1'h0                 
+#     AUI_map                            uvm_reg_map                          -     @771                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @727 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @742 +'h51044                                            
+#       AUI_AURORA_PS_TXFIFO_COUNT       AUI_AURORA_PS_TXFIFO_COUNT_reg       ...   @752 +'h5104c                                            
+#       AUI_AURORA_PS_RXFIFO_COUNT       AUI_AURORA_PS_RXFIFO_COUNT_reg       ...   @757 +'h51050                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @737 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @747 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @762 +'h51054                                            
+#       AUI_AURORA_CORE_STATUS           AUI_AURORA_CORE_STATUS_reg           ...   @732 +'h5103c                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @767 +'h51058                                            
+#   SCU                                  SCU_module                           -     @647                                                     
+#     SCU_ZU_TDATA_CNT                   SCU_ZU_TDATA_CNT_reg                 -     @694                                                     
+#       data                             uvm_reg_field                        ...    RO SCU_ZU_TDATA_CNT[7:0]=8'h00                          
+#     SCU_ZU_DATA_ENA                    SCU_ZU_DATA_ENA_reg                  -     @654                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_ZU_DATA_ENA[0:0]=1'h0                            
+#     SCU_ZU_BYTE_CNT_ERROR              SCU_ZU_BYTE_CNT_ERROR_reg            -     @699                                                     
+#       data                             uvm_reg_field                        ...    RO SCU_ZU_BYTE_CNT_ERROR[0:0]=1'h0                      
+#     SCU_TEMPERATURE_TEST_ENA           SCU_TEMPERATURE_TEST_ENA_reg         -     @704                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_ENA[0:0]=1'h0                   
+#     SCU_TEMPERATURE_TEST_DIGIT1        SCU_TEMPERATURE_TEST_DIGIT1_reg      -     @714                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT1[3:0]=4'h0                
+#     SCU_TEMPERATURE_TEST_DIGIT0        SCU_TEMPERATURE_TEST_DIGIT0_reg      -     @709                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT0[3:0]=4'h0                
+#     SCU_OLEDBYTE7_4                    SCU_OLEDBYTE7_4_reg                  -     @679                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE7_4[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE3_0                    SCU_OLEDBYTE3_0_reg                  -     @674                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE3_0[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE15_12                  SCU_OLEDBYTE15_12_reg                -     @689                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE15_12[31:0]=32'h00000000                 
+#     SCU_OLEDBYTE11_8                   SCU_OLEDBYTE11_8_reg                 -     @684                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE11_8[31:0]=32'h00000000                  
+#     SCU_FSM_RST                        SCU_FSM_RST_reg                      -     @664                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_FSM_RST[0:0]=1'h0                                
+#     SCU_DTI_READ_ENA                   SCU_DTI_READ_ENA_reg                 -     @659                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_DTI_READ_ENA[0:0]=1'h0                           
+#     SCU_ALARM_ACK_BUTTON               SCU_ALARM_ACK_BUTTON_reg             -     @669                                                     
+#       data                             uvm_reg_field                        ...    RO SCU_ALARM_ACK_BUTTON[0:0]=1'h0                       
+#     SCU_map                            uvm_reg_map                          -     @718                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_TDATA_CNT                 SCU_ZU_TDATA_CNT_reg                 ...   @694 +'h40020                                            
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @654 +'h40000                                            
+#       SCU_ZU_BYTE_CNT_ERROR            SCU_ZU_BYTE_CNT_ERROR_reg            ...   @699 +'h40024                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @704 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @714 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @709 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @679 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @674 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @689 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @684 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @664 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @659 +'h40004                                            
+#       SCU_ALARM_ACK_BUTTON             SCU_ALARM_ACK_BUTTON_reg             ...   @669 +'h4000c                                            
+#   ZU                                   ZU_module                            -     @619                                                     
+#     ZU_START_DECRYPTION                ZU_START_DECRYPTION_reg              -     @631                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_START_DECRYPTION[0:0]=1'h0                        
+#     ZU_FSM_RST                         ZU_FSM_RST_reg                       -     @641                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_FSM_RST[0:0]=1'h0                                 
+#     ZU_DONE_DECRYPTION                 ZU_DONE_DECRYPTION_reg               -     @636                                                     
+#       data                             uvm_reg_field                        ...    RO ZU_DONE_DECRYPTION[0:0]=1'h1                         
+#     ZU_DECRYPTION_BYPASS               ZU_DECRYPTION_BYPASS_reg             -     @626                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_DECRYPTION_BYPASS[0:0]=1'h1                       
+#     ZU_map                             uvm_reg_map                          -     @645                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_START_DECRYPTION              ZU_START_DECRYPTION_reg              ...   @631 +'h30004                                            
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @641 +'h3000c                                            
+#       ZU_DONE_DECRYPTION               ZU_DONE_DECRYPTION_reg               ...   @636 +'h30008                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @626 +'h30000                                            
+#   DTI                                  DTI_module                           -     @581                                                     
+#     DTI_SPI_TX_FIFO_COUNT              DTI_SPI_TX_FIFO_COUNT_reg            -     @598                                                     
+#       data                             uvm_reg_field                        ...    RO DTI_SPI_TX_FIFO_COUNT[8:0]=9'h000                    
+#     DTI_SPI_RX_FIFO_COUNT              DTI_SPI_RX_FIFO_COUNT_reg            -     @603                                                     
+#       data                             uvm_reg_field                        ...    RO DTI_SPI_RX_FIFO_COUNT[8:0]=9'h000                    
+#     DTI_SPI_PS_ACCESS_ENA              DTI_SPI_PS_ACCESS_ENA_reg            -     @613                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_PS_ACCESS_ENA[0:0]=1'h0                      
+#     DTI_SPI_LOOP_ENA                   DTI_SPI_LOOP_ENA_reg                 -     @608                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_LOOP_ENA[0:0]=1'h0                           
+#     DTI_SPI_FIFO_TX_WRITE_ENABLE       DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     -     @588                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_FIFO_TX_WRITE_ENABLE[0:0]=1'h1               
+#     DTI_SPI_ACTIVE                     DTI_SPI_ACTIVE_reg                   -     @593                                                     
+#       data                             uvm_reg_field                        ...    RO DTI_SPI_ACTIVE[0:0]=1'h0                             
+#     DTI_map                            uvm_reg_map                          -     @617                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_TX_FIFO_COUNT            DTI_SPI_TX_FIFO_COUNT_reg            ...   @598 +'h20068                                            
+#       DTI_SPI_RX_FIFO_COUNT            DTI_SPI_RX_FIFO_COUNT_reg            ...   @603 +'h2006c                                            
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @613 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @608 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @588 +'h20060                                            
+#       DTI_SPI_ACTIVE                   DTI_SPI_ACTIVE_reg                   ...   @593 +'h20064                                            
+#   ODI                                  ODI_module                           -     @547                                                     
+#     ODI_PS_ACCESS_ENA                  ODI_PS_ACCESS_ENA_reg                -     @575                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_PS_ACCESS_ENA[0:0]=1'h0                          
+#     ODI_OLEDBYTE7_4                    ODI_OLEDBYTE7_4_reg                  -     @560                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE7_4[31:0]=32'h20212020                   
+#     ODI_OLEDBYTE3_0                    ODI_OLEDBYTE3_0_reg                  -     @555                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE3_0[31:0]=32'h21202020                   
+#     ODI_OLEDBYTE15_12                  ODI_OLEDBYTE15_12_reg                -     @570                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE15_12[31:0]=32'h20202021                 
+#     ODI_OLEDBYTE11_8                   ODI_OLEDBYTE11_8_reg                 -     @565                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE11_8[31:0]=32'h20202120                  
+#     ODI_map                            uvm_reg_map                          -     @579                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @575 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @560 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @555 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @570 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @565 +'h10068                                            
+#   ZUPACKET                             ZUPACKET_mem                         -     @776                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   ZUKEY                                ZUKEY_mem                            -     @778                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   DTISPITXFIFO                         DTISPITXFIFO_mem                     -     @772                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd2048                                                   
+#   DTISPIRXFIFO                         DTISPIRXFIFO_mem                     -     @774                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd2048                                                   
+#   AUIAURORATXFIFO                      AUIAURORATXFIFO_mem                  -     @780                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   AUIAURORARXFIFO                      AUIAURORARXFIFO_mem                  -     @782                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   top_if_map                           uvm_reg_map                          -     @784                                                     
+#     endian                                                                  ...   UVM_LITTLE_ENDIAN                                        
+#     effective sequencer                uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#     ZUPACKET                           ZUPACKET_mem                         ...   @776 +'h600000                                           
+#     ZUKEY                              ZUKEY_mem                            ...   @778 +'h800000                                           
+#     DTISPITXFIFO                       DTISPITXFIFO_mem                     ...   @772 +'h200000                                           
+#     DTISPIRXFIFO                       DTISPIRXFIFO_mem                     ...   @774 +'h400000                                           
+#     AUIAURORATXFIFO                    AUIAURORATXFIFO_mem                  ...   @780 +'ha00000                                           
+#     AUIAURORARXFIFO                    AUIAURORARXFIFO_mem                  ...   @782 +'hc00000                                           
+#     ODI_map                            uvm_reg_map                          -     @579                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @575 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @560 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @555 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @570 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @565 +'h10068                                            
+#     DTI_map                            uvm_reg_map                          -     @617                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_TX_FIFO_COUNT            DTI_SPI_TX_FIFO_COUNT_reg            ...   @598 +'h20068                                            
+#       DTI_SPI_RX_FIFO_COUNT            DTI_SPI_RX_FIFO_COUNT_reg            ...   @603 +'h2006c                                            
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @613 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @608 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @588 +'h20060                                            
+#       DTI_SPI_ACTIVE                   DTI_SPI_ACTIVE_reg                   ...   @593 +'h20064                                            
+#     ZU_map                             uvm_reg_map                          -     @645                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_START_DECRYPTION              ZU_START_DECRYPTION_reg              ...   @631 +'h30004                                            
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @641 +'h3000c                                            
+#       ZU_DONE_DECRYPTION               ZU_DONE_DECRYPTION_reg               ...   @636 +'h30008                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @626 +'h30000                                            
+#     SCU_map                            uvm_reg_map                          -     @718                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_TDATA_CNT                 SCU_ZU_TDATA_CNT_reg                 ...   @694 +'h40020                                            
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @654 +'h40000                                            
+#       SCU_ZU_BYTE_CNT_ERROR            SCU_ZU_BYTE_CNT_ERROR_reg            ...   @699 +'h40024                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @704 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @714 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @709 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @679 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @674 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @689 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @684 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @664 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @659 +'h40004                                            
+#       SCU_ALARM_ACK_BUTTON             SCU_ALARM_ACK_BUTTON_reg             ...   @669 +'h4000c                                            
+#     AUI_map                            uvm_reg_map                          -     @771                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @727 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @742 +'h51044                                            
+#       AUI_AURORA_PS_TXFIFO_COUNT       AUI_AURORA_PS_TXFIFO_COUNT_reg       ...   @752 +'h5104c                                            
+#       AUI_AURORA_PS_RXFIFO_COUNT       AUI_AURORA_PS_RXFIFO_COUNT_reg       ...   @757 +'h51050                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @737 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @747 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @762 +'h51054                                            
+#       AUI_AURORA_CORE_STATUS           AUI_AURORA_CORE_STATUS_reg           ...   @732 +'h5103c                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @767 +'h51058                                            
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# Name                                   Type                                 Size  Value                                                    
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# m_psif_regs_rw                         top_PSIF_rw                          -     @787                                                     
+#   AUI                                  AUI_module                           -     @922                                                     
+#     AUI_RESET                          AUI_RESET_reg                        -     @929                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_RESET[0:0]=1'h0                                  
+#     AUI_AURORA_RESET                   AUI_AURORA_RESET_reg                 -     @939                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_RESET[0:0]=1'h1                           
+#     AUI_AURORA_LOOPBACK                AUI_AURORA_LOOPBACK_reg              -     @934                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_LOOPBACK[2:0]=3'h0                        
+#     AUI_AURORA_GT_RESET                AUI_AURORA_GT_RESET_reg              -     @944                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_GT_RESET[0:0]=1'h1                        
+#     AUI_AURORA_FIFO_TX_WRITE_ENABLE    AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  -     @949                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_FIFO_TX_WRITE_ENABLE[0:0]=1'h0            
+#     AUI_AURORA_ACCESS_LOOP_ENA         AUI_AURORA_ACCESS_LOOP_ENA_reg       -     @954                                                     
+#       data                             uvm_reg_field                        ...    RW AUI_AURORA_ACCESS_LOOP_ENA[0:0]=1'h0                 
+#     AUI_map                            uvm_reg_map                          -     @958                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @929 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @939 +'h51044                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @934 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @944 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @949 +'h51054                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @954 +'h51058                                            
+#   SCU                                  SCU_module                           -     @864                                                     
+#     SCU_ZU_DATA_ENA                    SCU_ZU_DATA_ENA_reg                  -     @871                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_ZU_DATA_ENA[0:0]=1'h0                            
+#     SCU_TEMPERATURE_TEST_ENA           SCU_TEMPERATURE_TEST_ENA_reg         -     @906                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_ENA[0:0]=1'h0                   
+#     SCU_TEMPERATURE_TEST_DIGIT1        SCU_TEMPERATURE_TEST_DIGIT1_reg      -     @916                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT1[3:0]=4'h0                
+#     SCU_TEMPERATURE_TEST_DIGIT0        SCU_TEMPERATURE_TEST_DIGIT0_reg      -     @911                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_TEMPERATURE_TEST_DIGIT0[3:0]=4'h0                
+#     SCU_OLEDBYTE7_4                    SCU_OLEDBYTE7_4_reg                  -     @891                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE7_4[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE3_0                    SCU_OLEDBYTE3_0_reg                  -     @886                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE3_0[31:0]=32'h00000000                   
+#     SCU_OLEDBYTE15_12                  SCU_OLEDBYTE15_12_reg                -     @901                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE15_12[31:0]=32'h00000000                 
+#     SCU_OLEDBYTE11_8                   SCU_OLEDBYTE11_8_reg                 -     @896                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_OLEDBYTE11_8[31:0]=32'h00000000                  
+#     SCU_FSM_RST                        SCU_FSM_RST_reg                      -     @881                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_FSM_RST[0:0]=1'h0                                
+#     SCU_DTI_READ_ENA                   SCU_DTI_READ_ENA_reg                 -     @876                                                     
+#       data                             uvm_reg_field                        ...    RW SCU_DTI_READ_ENA[0:0]=1'h0                           
+#     SCU_map                            uvm_reg_map                          -     @920                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @871 +'h40000                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @906 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @916 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @911 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @891 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @886 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @901 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @896 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @881 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @876 +'h40004                                            
+#   ZU                                   ZU_module                            -     @846                                                     
+#     ZU_FSM_RST                         ZU_FSM_RST_reg                       -     @858                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_FSM_RST[0:0]=1'h0                                 
+#     ZU_DECRYPTION_BYPASS               ZU_DECRYPTION_BYPASS_reg             -     @853                                                     
+#       data                             uvm_reg_field                        ...    RW ZU_DECRYPTION_BYPASS[0:0]=1'h1                       
+#     ZU_map                             uvm_reg_map                          -     @862                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @858 +'h3000c                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @853 +'h30000                                            
+#   DTI                                  DTI_module                           -     @823                                                     
+#     DTI_SPI_PS_ACCESS_ENA              DTI_SPI_PS_ACCESS_ENA_reg            -     @840                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_PS_ACCESS_ENA[0:0]=1'h0                      
+#     DTI_SPI_LOOP_ENA                   DTI_SPI_LOOP_ENA_reg                 -     @835                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_LOOP_ENA[0:0]=1'h0                           
+#     DTI_SPI_FIFO_TX_WRITE_ENABLE       DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     -     @830                                                     
+#       data                             uvm_reg_field                        ...    RW DTI_SPI_FIFO_TX_WRITE_ENABLE[0:0]=1'h1               
+#     DTI_map                            uvm_reg_map                          -     @844                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @840 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @835 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @830 +'h20060                                            
+#   ODI                                  ODI_module                           -     @790                                                     
+#     ODI_PS_ACCESS_ENA                  ODI_PS_ACCESS_ENA_reg                -     @817                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_PS_ACCESS_ENA[0:0]=1'h0                          
+#     ODI_OLEDBYTE7_4                    ODI_OLEDBYTE7_4_reg                  -     @802                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE7_4[31:0]=32'h20212020                   
+#     ODI_OLEDBYTE3_0                    ODI_OLEDBYTE3_0_reg                  -     @797                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE3_0[31:0]=32'h21202020                   
+#     ODI_OLEDBYTE15_12                  ODI_OLEDBYTE15_12_reg                -     @812                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE15_12[31:0]=32'h20202021                 
+#     ODI_OLEDBYTE11_8                   ODI_OLEDBYTE11_8_reg                 -     @807                                                     
+#       data                             uvm_reg_field                        ...    RW ODI_OLEDBYTE11_8[31:0]=32'h20202120                  
+#     ODI_map                            uvm_reg_map                          -     @821                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @817 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @802 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @797 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @812 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @807 +'h10068                                            
+#   ZUPACKET                             ZUPACKET_mem                         -     @959                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   ZUKEY                                ZUKEY_mem                            -     @961                                                     
+#     n_bits                             integral                             32    'd32                                                     
+#     size                               integral                             32    'd512                                                    
+#   top_if_map                           uvm_reg_map                          -     @963                                                     
+#     endian                                                                  ...   UVM_LITTLE_ENDIAN                                        
+#     effective sequencer                uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#     ZUPACKET                           ZUPACKET_mem                         ...   @959 +'h600000                                           
+#     ZUKEY                              ZUKEY_mem                            ...   @961 +'h800000                                           
+#     ODI_map                            uvm_reg_map                          -     @821                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ODI_PS_ACCESS_ENA                ODI_PS_ACCESS_ENA_reg                ...   @817 +'h10088                                            
+#       ODI_OLEDBYTE7_4                  ODI_OLEDBYTE7_4_reg                  ...   @802 +'h10064                                            
+#       ODI_OLEDBYTE3_0                  ODI_OLEDBYTE3_0_reg                  ...   @797 +'h10060                                            
+#       ODI_OLEDBYTE15_12                ODI_OLEDBYTE15_12_reg                ...   @812 +'h1006c                                            
+#       ODI_OLEDBYTE11_8                 ODI_OLEDBYTE11_8_reg                 ...   @807 +'h10068                                            
+#     DTI_map                            uvm_reg_map                          -     @844                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       DTI_SPI_PS_ACCESS_ENA            DTI_SPI_PS_ACCESS_ENA_reg            ...   @840 +'h20074                                            
+#       DTI_SPI_LOOP_ENA                 DTI_SPI_LOOP_ENA_reg                 ...   @835 +'h20070                                            
+#       DTI_SPI_FIFO_TX_WRITE_ENABLE     DTI_SPI_FIFO_TX_WRITE_ENABLE_reg     ...   @830 +'h20060                                            
+#     ZU_map                             uvm_reg_map                          -     @862                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       ZU_FSM_RST                       ZU_FSM_RST_reg                       ...   @858 +'h3000c                                            
+#       ZU_DECRYPTION_BYPASS             ZU_DECRYPTION_BYPASS_reg             ...   @853 +'h30000                                            
+#     SCU_map                            uvm_reg_map                          -     @920                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       SCU_ZU_DATA_ENA                  SCU_ZU_DATA_ENA_reg                  ...   @871 +'h40000                                            
+#       SCU_TEMPERATURE_TEST_ENA         SCU_TEMPERATURE_TEST_ENA_reg         ...   @906 +'h40028                                            
+#       SCU_TEMPERATURE_TEST_DIGIT1      SCU_TEMPERATURE_TEST_DIGIT1_reg      ...   @916 +'h40030                                            
+#       SCU_TEMPERATURE_TEST_DIGIT0      SCU_TEMPERATURE_TEST_DIGIT0_reg      ...   @911 +'h4002c                                            
+#       SCU_OLEDBYTE7_4                  SCU_OLEDBYTE7_4_reg                  ...   @891 +'h40014                                            
+#       SCU_OLEDBYTE3_0                  SCU_OLEDBYTE3_0_reg                  ...   @886 +'h40010                                            
+#       SCU_OLEDBYTE15_12                SCU_OLEDBYTE15_12_reg                ...   @901 +'h4001c                                            
+#       SCU_OLEDBYTE11_8                 SCU_OLEDBYTE11_8_reg                 ...   @896 +'h40018                                            
+#       SCU_FSM_RST                      SCU_FSM_RST_reg                      ...   @881 +'h40008                                            
+#       SCU_DTI_READ_ENA                 SCU_DTI_READ_ENA_reg                 ...   @876 +'h40004                                            
+#     AUI_map                            uvm_reg_map                          -     @958                                                     
+#       endian                                                                ...   UVM_LITTLE_ENDIAN                                        
+#       effective sequencer              uvm_sequencer                        ...   uvm_test_top.m_env.m_psif_axi4lite_master_agent.sequencer
+#       AUI_RESET                        AUI_RESET_reg                        ...   @929 +'h51020                                            
+#       AUI_AURORA_RESET                 AUI_AURORA_RESET_reg                 ...   @939 +'h51044                                            
+#       AUI_AURORA_LOOPBACK              AUI_AURORA_LOOPBACK_reg              ...   @934 +'h51040                                            
+#       AUI_AURORA_GT_RESET              AUI_AURORA_GT_RESET_reg              ...   @944 +'h51048                                            
+#       AUI_AURORA_FIFO_TX_WRITE_ENABLE  AUI_AURORA_FIFO_TX_WRITE_ENABLE_reg  ...   @949 +'h51054                                            
+#       AUI_AURORA_ACCESS_LOOP_ENA       AUI_AURORA_ACCESS_LOOP_ENA_reg       ...   @954 +'h51058                                            
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    11
+# ** Report counts by severity
+# UVM_INFO :  249
+# UVM_WARNING :   44
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [RegModel]     6
+# [SPI_4WIRE_SEQ]     1
+# [TEST_DONE]     1
+# [TPRGED]    38
+# [kb_axi4lite_agent_driver:report]     1
+# [oled_spi_agent_monitor]     1
+# [psif_dti_spi_seq]   195
+# [psif_dti_spi_test]     1
+# [spi_4wire_agent_monitor]    45
+# ** Note: $finish    : /uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 140005 ns  Iteration: 70  Instance: /tb_top
+# Break in Task uvm_pkg/uvm_root::run_test at /uio/kant/ifi-project12/nanus/eda/Mentor/2020_2021/QuestaCore/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# Break key hit
+# Break key hit
+# Break key hit
+# Memory Statistics                         
+#     mem: size after elab (VSZ)                 849.80 Mb
+#     mem: size during sim (VSZ)                 867.18 Mb
+# Elaboration Time                          
+#    elab: wall time                               2.44 s
+#    elab: cpu time                                1.85 s
+# Simulation Time                           
+#     sim: wall time                               6.96 s
+#     sim: cpu time                                6.87 s
+#     log: wall time                               6.96 s
+#     log: cpu time                                0.00 s
+# Tcl Command Time                          
+#     cmd: wall time                           66473.59 s
+#     cmd: cpu time                                2.09 s
+# Total Time                                
+#   total: wall time                           66482.99 s
+#   total: cpu time                               10.81 s
+# 
+# End time: 11:15:46 on Nov 22,2023, Elapsed time: 18:28:03
+# Errors: 0, Warnings: 163

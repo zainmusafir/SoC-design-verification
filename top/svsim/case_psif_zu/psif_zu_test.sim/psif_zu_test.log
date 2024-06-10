@@ -1,0 +1,330 @@
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_test.svh(368) @ 0: uvm_test_top [psif_zu_test] Printing the test topology :
+------------------------------------------------------------------------------------------
+Name                              Type                                         Size  Value
+------------------------------------------------------------------------------------------
+uvm_test_top                      psif_zu_test                                 -     @493 
+  m_env                           tb_env                                       -     @1000
+    coverage_override_h           coverage_override                            -     @1021
+      recording_detail            integral                                     32    'd1  
+    m_kb_axi4stream_agent         kb_axi4stream_agent                          -     @1042
+      ap                          uvm_analysis_port                            -     @1064
+        recording_detail          integral                                     32    'd1  
+      m_driver                    kb_axi4stream_agent_driver                   -     @1079
+        rsp_port                  uvm_analysis_port                            -     @1094
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1086
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_monitor                   kb_axi4stream_agent_monitor                  -     @1072
+        ap                        uvm_analysis_port                            -     @1212
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1102
+        rsp_export                uvm_analysis_export                          -     @1109
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1203
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_oled_spi_agent              oled_spi_agent                               -     @1035
+      m_monitor                   oled_spi_agent_monitor                       -     @1226
+        ap                        uvm_analysis_port                            -     @1233
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_psif_axi4lite_master_agent  kb_axi4lite_agent                            -     @1007
+      ap                          uvm_analysis_port                            -     @1243
+        recording_detail          integral                                     32    'd1  
+      m_driver                    kb_axi4lite_agent_driver                     -     @1273
+        rsp_port                  uvm_analysis_port                            -     @1288
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1280
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_fcov_monitor              kb_axi4lite_agent_coverage_monitor           -     @1258
+        analysis_imp              uvm_analysis_imp                             -     @1265
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      m_monitor                   kb_axi4lite_agent_monitor                    -     @1251
+        ap                        uvm_analysis_port                            -     @1406
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1296
+        rsp_export                uvm_analysis_export                          -     @1303
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1397
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_reset_agent                 reset_agent                                  -     @1014
+      m_driver                    reset_agent_driver                           -     @1420
+        rsp_port                  uvm_analysis_port                            -     @1435
+          recording_detail        integral                                     32    'd1  
+        seq_item_port             uvm_seq_item_pull_port                       -     @1427
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      sequencer                   uvm_sequencer                                -     @1443
+        rsp_export                uvm_analysis_export                          -     @1450
+          recording_detail        integral                                     32    'd1  
+        seq_item_export           uvm_seq_item_pull_imp                        -     @1544
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+        arbitration_queue         array                                        0     -    
+        lock_queue                array                                        0     -    
+        num_last_reqs             integral                                     32    'd1  
+        num_last_rsps             integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_scoreboard_oled_spi_base    scoreboard_oled_spi_base                     -     @1049
+      oled_spi_monitor_out        uvm_tlm_analysis_fifo #(T)                   -     @1558
+        analysis_export           uvm_analysis_imp                             -     @1597
+          recording_detail        integral                                     32    'd1  
+        get_ap                    uvm_analysis_port                            -     @1589
+          recording_detail        integral                                     32    'd1  
+        get_peek_export           uvm_get_peek_imp                             -     @1573
+          recording_detail        integral                                     32    'd1  
+        put_ap                    uvm_analysis_port                            -     @1581
+          recording_detail        integral                                     32    'd1  
+        put_export                uvm_put_imp                                  -     @1565
+          recording_detail        integral                                     32    'd1  
+        recording_detail          integral                                     32    'd1  
+      recording_detail            integral                                     32    'd1  
+    m_scoreboard_zu_base          scoreboard_zu_base                           -     @1056
+      recording_detail            integral                                     32    'd1  
+    scoreboard_override_h         scoreboard_override                          -     @1028
+      recording_detail            integral                                     32    'd1  
+    recording_detail              integral                                     32    'd1  
+  m_psif_reg_predictor_all        uvm_reg_predictor #(kb_axi4lite_agent_item)  -     @954 
+    bus_in                        uvm_analysis_imp                             -     @961 
+      recording_detail            integral                                     32    'd1  
+    reg_ap                        uvm_analysis_port                            -     @969 
+      recording_detail            integral                                     32    'd1  
+    recording_detail              integral                                     32    'd1  
+  m_psif_reg_predictor_rw         uvm_reg_predictor #(kb_axi4lite_agent_item)  -     @977 
+    bus_in                        uvm_analysis_imp                             -     @984 
+      recording_detail            integral                                     32    'd1  
+    reg_ap                        uvm_analysis_port                            -     @992 
+      recording_detail            integral                                     32    'd1  
+    recording_detail              integral                                     32    'd1  
+  recording_detail                integral                                     32    'd1  
+------------------------------------------------------------------------------------------
+
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(31) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Module names: AUI
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(31) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Module names: SCU
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(31) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Module names: ZU
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(31) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Module names: DTI
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(31) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Module names: ODI
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_RESET
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_RESET
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_PS_TXFIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_PS_RXFIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_LOOPBACK
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_GT_RESET
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_FIFO_TX_WRITE_ENABLE
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_CORE_STATUS
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: AUI_AURORA_ACCESS_LOOP_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_ZU_TDATA_CNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_ZU_DATA_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_ZU_BYTE_CNT_ERROR
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_TEMPERATURE_TEST_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_TEMPERATURE_TEST_DIGIT1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_TEMPERATURE_TEST_DIGIT0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_OLEDBYTE7_4
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_OLEDBYTE3_0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_OLEDBYTE15_12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_OLEDBYTE11_8
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_FSM_RST
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_DTI_READ_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: SCU_ALARM_ACK_BUTTON
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ZU_START_DECRYPTION
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ZU_FSM_RST
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ZU_DONE_DECRYPTION
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ZU_DECRYPTION_BYPASS
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: DTI_SPI_TX_FIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: DTI_SPI_RX_FIFO_COUNT
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: DTI_SPI_PS_ACCESS_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: DTI_SPI_LOOP_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: DTI_SPI_FIFO_TX_WRITE_ENABLE
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: DTI_SPI_ACTIVE
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ODI_PS_ACCESS_ENA
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ODI_OLEDBYTE7_4
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ODI_OLEDBYTE3_0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ODI_OLEDBYTE15_12
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/svsim/case_psif_zu/psif_zu_seq.svh(35) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Register names: ODI_OLEDBYTE11_8
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 31000000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x3020100
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 31175000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x3020100
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 31175000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x7060504
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 31355000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x7060504
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 31355000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xb0a0908
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 31535000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xb0a0908
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 31535000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xf0e0d0c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 31715000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xf0e0d0c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 31715000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x6040200
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 31895000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x6040200
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 31895000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xe0c0a08
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 32075000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xe0c0a08
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 32075000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x16141210
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 32255000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x16141210
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 32255000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x1e1c1a18
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 32435000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x1e1c1a18
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 32435000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x9060300
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 32615000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x9060300
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 32615000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x15120f0c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 32795000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x15120f0c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 32795000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x731e1b18
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 32975000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x731e1b18
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 32975000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x72ce98a1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 33155000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x72ce98a1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33155000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xc080400
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 33335000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xc080400
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33335000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x1c181410
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 33515000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x1c181410
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33515000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xa5a9a1a5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 33695000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xa5a9a1a5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33695000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x61a0216
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 33875000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x61a0216
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 33875000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xf0a0500
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34055000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xf0a0500
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 34055000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x9f1e1914
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34235000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x9f1e1914
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 34235000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xdaa872a9
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34415000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xdaa872a9
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 34415000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xfb1b8706
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34595000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xfb1b8706
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 34595000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x120c0600
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34775000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x120c0600
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 34775000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xcea11e18
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 34955000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xcea11e18
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 34955000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xdf06be16
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 35135000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xdf06be16
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35135000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xeb6f15a6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 35315000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xeb6f15a6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35315000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x150e0700
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 35495000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x150e0700
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35495000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x51ce9f1c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 35675000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x51ce9f1c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35675000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xfc1bde1a
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 35855000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xfc1bde1a
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 35855000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x2982536f
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 36035000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x2982536f
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 36035000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x18100800
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 36215000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x18100800
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 36215000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x1a16a9a5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 36395000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x1a16a9a5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 36395000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x756da6ae
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 36575000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x756da6ae
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 36575000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x273d6fc6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 36755000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x273d6fc6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 36755000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x1b120900
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 36935000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x1b120900
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 36935000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xdebe72a1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 37115000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xdebe72a1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 37115000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x7febe1a6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 37295000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x7febe1a6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 37295000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x48cf476c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 37475000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x48cf476c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 37475000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x1e140a00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 37655000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x1e140a00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 37655000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x1b06a8a9
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 37835000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x1b06a8a9
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 37835000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x59c9eb6d
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 38015000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x59c9eb6d
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 38015000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xd3c19027
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 38195000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xd3c19027
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 38195000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x73160b00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 38375000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x73160b00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 38375000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xfcdfdaa5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 38555000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xfcdfdaa5
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 38555000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xbf597f75
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 38735000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xbf597f75
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 38735000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xb44d2fc2
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 38915000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xb44d2fc2
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 38915000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xa1180c00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 39095000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xa1180c00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 39095000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x6fa60616
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 39275000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x6fa60616
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 39275000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xc2276cc6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 39455000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xc2276cc6
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 39455000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xe7136445
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 39635000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xe7136445
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 39635000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x981a0d00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 39815000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x981a0d00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 39815000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x53158702
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 39995000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x53158702
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 39995000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x2f90476f
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 40175000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x2f90476f
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 40175000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x7129e664
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 40355000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x7129e664
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 40355000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xce1c0e00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 40535000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xce1c0e00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 40535000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x826f1b1a
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 40715000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x826f1b1a
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 40715000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x4dc1cf3d
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 40895000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x4dc1cf3d
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 40895000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x669b2913
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 41075000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x669b2913
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 41075000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x721e0f00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 41255000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x721e0f00
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 41255000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0x29ebfb06
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 41435000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0x29ebfb06
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 41435000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xb4d34827
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 41615000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xb4d34827
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 41615000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUKEY with value: 0xfc6671e7
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 41795000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUKEY with value: 0xfc6671e7
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 41795000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0x3020100
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 41975000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0x3020100
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 41975000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0x7060504
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 42155000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0x7060504
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 42155000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0xb0a0908
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 42335000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0xb0a0908
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 42335000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0xf0e0d0c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 42515000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0xf0e0d0c
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 42515000: reporter@@m_psif_zu_seq [psif_zu_seq] Write to module SCU with register SCU_ZU_DATA_ENA with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 42875000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register SCU_ZU_DATA_ENA with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 42875000: reporter@@m_psif_zu_seq [psif_zu_seq] Write to module SCU with register SCU_DTI_READ_ENA with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 43295000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register SCU_DTI_READ_ENA with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 43295000: reporter@@m_psif_zu_seq [psif_zu_seq] Write to module ZU with register ZU_DECRYPTION_BYPASS with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 43685000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register ZU_DECRYPTION_BYPASS with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 43685000: reporter@@m_psif_zu_seq [psif_zu_seq] Write to module ZU with register ZU_START_DECRYPTION with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 44075000: reporter@@m_psif_zu_seq [psif_zu_seq] Polling register SCU_ALARM_ACK_BUTTON with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 44275000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register ZU_DONE_DECRYPTION with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 45415000: reporter@@m_psif_zu_seq [psif_zu_seq] Polling register ZU_DONE_DECRYPTION with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 45615000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register SCU_ZU_TDATA_CNT with value: 0x10
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 45825000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register SCU_ZU_BYTE_CNT_ERROR with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 46035000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 47185000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 48335000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 49485000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 50635000: reporter@@m_psif_zu_seq [psif_zu_seq] Polling register SCU_ALARM_ACK_BUTTON with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 50635000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0xe1cdce34
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 50875000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0xe1cdce34
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 50875000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0xfd9a6589
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 51055000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0xfd9a6589
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 51055000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0x686d0429
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 51235000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0x686d0429
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(426) @ 51235000: reporter@@m_psif_zu_seq [psif_zu_seq] Write memory ZUPACKET with value: 0x5ef84d9e
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(490) @ 51415000: reporter@@m_psif_zu_seq [psif_zu_seq] Check memory ZUPACKET with value: 0x5ef84d9e
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 51415000: reporter@@m_psif_zu_seq [psif_zu_seq] Write to module ZU with register ZU_DECRYPTION_BYPASS with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 51745000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register ZU_DECRYPTION_BYPASS with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(171) @ 51745000: reporter@@m_psif_zu_seq [psif_zu_seq] Write to module ZU with register ZU_START_DECRYPTION with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 52135000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x1, but polling:  0x0 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 53285000: reporter@@m_psif_zu_seq [psif_zu_seq] Polling register SCU_ALARM_ACK_BUTTON with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 53485000: reporter@@m_psif_zu_seq [psif_zu_seq] Polling register ZU_DONE_DECRYPTION with value: 0x1
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 53685000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register SCU_ZU_TDATA_CNT with value: 0x10
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(296) @ 53895000: reporter@@m_psif_zu_seq [psif_zu_seq] Check register SCU_ZU_BYTE_CNT_ERROR with value: 0x0
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 54105000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 55255000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 56405000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 57555000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 58705000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(381) @ 59855000: reporter@@m_psif_zu_seq [psif_zu_seq] Warning: Polling register SCU_ALARM_ACK_BUTTON with value: 0x0, but polling:  0x1 NOT found; still polling ...
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/top/tb_base/base_seq.svh(383) @ 61005000: reporter@@m_psif_zu_seq [psif_zu_seq] Polling register SCU_ALARM_ACK_BUTTON with value: 0x1
+UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 61005000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /uio/hume/student-u01/mohammzf/LISP/in5200_lab3/vip/kb_axi4lite_agent/kb_axi4lite_agent_driver.svh(43) @ 61005000: uvm_test_top.m_env.m_psif_axi4lite_master_agent.m_driver [kb_axi4lite_agent_driver:report] 168 AXI4Lite_Agent sequence items
